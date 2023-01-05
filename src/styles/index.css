@@ -42,5 +42,9 @@
 
 .marquee {
   background-color: #edf3f2;
+  background-image: url("../imgs/marquee-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
   height: 100vh;
 }
