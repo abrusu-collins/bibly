@@ -1,5 +1,9 @@
 landing page
-hero
-marquee of bible quotes
+
+process
+
+ share
+ social media icons will have a grayscale, hover revelas main color (ayo)
+
 
 app page
