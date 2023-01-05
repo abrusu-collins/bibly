@@ -47,12 +47,12 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  padding: 90px 0;
 }
 .marquee .header {
   font-size: 50px;
   font-weight: 900;
   text-align: center;
-  padding-top: 50px;
 }
 .marquee .text {
   text-align: center;
@@ -68,4 +68,8 @@
 }
 .marquee img {
   width: 100%;
+}
+
+.steps {
+  height: 100vh;
 }
