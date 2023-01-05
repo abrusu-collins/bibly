@@ -13,7 +13,7 @@
   width: 80%;
   grid-gap: 2rem;
   align-items: center;
-  margin: 100px auto 100px auto;
+  margin: 200px auto 200px auto;
 }
 .hero .hero-text .hero-title {
   font-size: 50px;
@@ -38,4 +38,9 @@
 
 .hero img {
   width: 110%;
+}
+
+.marquee {
+  background-color: #edf3f2;
+  height: 100vh;
 }
