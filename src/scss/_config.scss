@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
-    
-}
+
 $background_color:#ffffff;
 $background_color2:#edf3f2;
 $text_color:#484d51;
 $header_color:#14181f;
 $button_color: #f075c6;
 $button_shadow:#14181f;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    color: $text_color;
+    
+}
