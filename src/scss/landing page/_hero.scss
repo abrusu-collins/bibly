@@ -1,7 +1,7 @@
 .hero {
   background-color: $background_color;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1.7fr;
   width: 80%;
   grid-gap: 2rem;
   align-items: center;
@@ -30,5 +30,5 @@
 }
 
 .hero img {
-  width: 110%;
+  width: 100%;
 }
