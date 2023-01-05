@@ -16,6 +16,11 @@
         width: 80%;
         margin: auto;
         & .step1{
+            & .step-header{
+                font-weight: 700;
+                font-size: 25px;
+                margin-bottom: 15px;
+            }
             & .number{
                 position: absolute;
                 text-align: center;

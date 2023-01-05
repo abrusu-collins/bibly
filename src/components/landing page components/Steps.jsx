@@ -8,6 +8,7 @@ function Steps() {
       </div>
       <div className="steps-div">
         <div className="step1">
+            <p className="step-header">Click on "Start Generator" button</p>
           <p className="number">1</p>
           <p className="step-description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
@@ -18,6 +19,7 @@ function Steps() {
         </div>
 
         <div className="step1">
+        <p className="step-header">Choose your bible verse</p>
           <p className="number">2</p>
           <p className="step-description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
@@ -28,6 +30,7 @@ function Steps() {
         </div>
 
         <div className="step1">
+        <p className="step-header">Choose your background</p>
           <p className="number">3</p>
           <p className="step-description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
@@ -38,6 +41,7 @@ function Steps() {
         </div>
 
         <div className="step1">
+        <p className="step-header">Save or Share</p>
           <p className="number">4</p>
           <p className="step-description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa

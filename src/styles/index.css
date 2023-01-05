@@ -94,6 +94,11 @@
   padding: 90px;
   border-radius: 15px;
 }
+.steps .steps-div .step1 .step-header {
+  font-weight: 700;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
 .steps .steps-div .step1 .number {
   position: absolute;
   text-align: center;
