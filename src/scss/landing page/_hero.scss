@@ -11,6 +11,9 @@
       font-size: 50px;
       font-weight: 900;
     }
+    & .hero-description{
+        margin: 20px auto 25px auto;
+    }
   }
   & a {
     color: $background_color;
