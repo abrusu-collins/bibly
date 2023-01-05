@@ -73,6 +73,9 @@
 .steps {
   padding: 100px 0;
 }
+.steps .img1 {
+  text-align: right;
+}
 .steps .header {
   font-size: 50px;
   font-weight: 900;

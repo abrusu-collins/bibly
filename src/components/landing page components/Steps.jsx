@@ -1,8 +1,11 @@
+import triangle from "../../imgs/triangle.png";
 function Steps() {
   return (
     <div className="steps">
       <p className="header">Steps to generate your Image</p>
-
+      <div className="img1">
+        <img src={triangle} alt="" />
+      </div>
       <div className="steps-div">
         <div className="step1">
           <p className="number">1</p>
@@ -43,6 +46,9 @@ function Steps() {
             Aperiam magnam voluptas dolor.
           </p>
         </div>
+      </div>
+      <div className="img2">
+        <img src={triangle} alt="" />
       </div>
     </div>
   );
