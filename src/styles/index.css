@@ -18,9 +18,11 @@
 .hero .hero-text .hero-title {
   font-size: 50px;
   font-weight: 900;
+  -webkit-text-decoration: underline wavy #f075c6;
+          text-decoration: underline wavy #f075c6;
 }
 .hero .hero-text .hero-description {
-  margin: 20px auto 25px auto;
+  margin: 30px auto 35px auto;
 }
 .hero a {
   color: #ffffff;

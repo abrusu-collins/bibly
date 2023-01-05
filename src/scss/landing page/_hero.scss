@@ -10,9 +10,10 @@
     & .hero-title {
       font-size: 50px;
       font-weight: 900;
+      text-decoration: underline wavy $button_color;
     }
     & .hero-description{
-        margin: 20px auto 25px auto;
+        margin: 30px auto 35px auto;
     }
   }
   & a {
