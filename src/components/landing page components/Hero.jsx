@@ -5,8 +5,12 @@ function Hero() {
     <div className="hero">
       <div className="hero-text">
         <p className="hero-title">Bibly</p>
-        <p className="hero-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quod facere, officiis explicabo ut illum laudantium recusandae dignissimos reprehenderit! Molestiae facere dolores nemo natus delectus veritatis atque temporibus maiores ea.</p>
-      <a href="">Start Generator</a>
+        <p className="hero-description">
+          This app is a platform for generating and sharing beautiful images of
+          Bible verses. The app aims to provide a visually appealing and
+          inspiring way for people to connect with the teachings of the Bible.
+        </p>
+        <a href="">Start Generator</a>
       </div>
 
       <img src={heroImg} alt="heroImage" />
