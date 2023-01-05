@@ -71,5 +71,34 @@
 }
 
 .steps {
-  height: 100vh;
+  padding: 100px 0;
+}
+.steps .header {
+  font-size: 50px;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.steps .steps-div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  width: 80%;
+  margin: auto;
+}
+.steps .steps-div .step1 {
+  background-color: #edf3f2;
+  padding: 90px;
+  border-radius: 15px;
+}
+.steps .steps-div .step1 .number {
+  position: absolute;
+  text-align: center;
+  font-size: 150px;
+  color: #e1e4e7;
+  z-index: 0;
+}
+.steps .steps-div .step1 .step-description {
+  position: relative;
+  z-index: 1;
 }
