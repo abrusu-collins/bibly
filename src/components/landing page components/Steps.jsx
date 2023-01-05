@@ -8,7 +8,7 @@ function Steps() {
       </div>
       <div className="steps-div">
         <div className="step1">
-            <p className="step-header">Click on "Start Generator" button</p>
+            <p className="step-header">Click on the "Start Generator" button</p>
           <p className="number">1</p>
           <p className="step-description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
