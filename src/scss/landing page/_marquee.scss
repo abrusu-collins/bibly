@@ -4,5 +4,15 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  height: 100vh;
+  & .top, .down{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:2rem;
+    width: 80%;
+    margin: auto;
+    padding-top: 30px;
+  }
+  & img{
+    width: 100%;
+  }
 }
