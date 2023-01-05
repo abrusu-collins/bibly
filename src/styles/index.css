@@ -19,6 +19,17 @@
   font-size: 50px;
   font-weight: 900;
 }
+.hero a {
+  color: #ffffff;
+  background-color: #f075c6;
+  text-decoration: none;
+  padding: 18px 32.5px;
+  border-radius: 30px;
+  box-shadow: 10px 10px 0px -4px rgb(0, 0, 0);
+  -webkit-box-shadow: 10px 10px 0px -4px rgb(0, 0, 0);
+  -moz-box-shadow: 10px 10px 0px -4px rgb(0, 0, 0);
+  display: inline-block;
+}
 
 .hero img {
   width: 110%;
