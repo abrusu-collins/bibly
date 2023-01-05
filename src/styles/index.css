@@ -48,7 +48,13 @@
   background-position: center;
   background-size: contain;
 }
-.marquee .top, .marquee .down {
+.marquee .header {
+  font-size: 50px;
+  font-weight: 900;
+  text-align: center;
+  padding: 50px;
+}
+.marquee .top {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;

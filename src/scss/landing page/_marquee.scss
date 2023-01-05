@@ -4,15 +4,21 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  & .top, .down{
+  & .header {
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center;
+    padding: 50px;
+  }
+  & .top {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap:2rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
     width: 80%;
     margin: auto;
     padding-top: 30px;
   }
-  & img{
+  & img {
     width: 100%;
   }
 }

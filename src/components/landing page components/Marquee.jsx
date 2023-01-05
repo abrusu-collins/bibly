@@ -12,6 +12,7 @@ import bv10 from "../../imgs/bv-10.png";
 function Marquee() {
   return (
     <div className="marquee">
+        <p className="header">Share beautiful images of scriptures.</p>
       <div className="top">
         <img src={bv1} alt="" />
         <img src={bv2} alt="" />
