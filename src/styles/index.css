@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -25,6 +26,7 @@ span {
   font-weight: 900;
   -webkit-text-decoration: underline wavy #f075c6;
           text-decoration: underline wavy #f075c6;
+  font-family: "Aclonica", sans-serif;
 }
 .hero .hero-text .hero-description {
   margin: 30px auto 35px auto;
@@ -57,6 +59,7 @@ span {
   font-size: 50px;
   font-weight: 900;
   text-align: center;
+  font-family: "Aclonica", sans-serif;
 }
 .marquee .text {
   text-align: center;
@@ -85,6 +88,7 @@ span {
   font-weight: 900;
   text-align: center;
   margin-bottom: 50px;
+  font-family: "Aclonica", sans-serif;
 }
 .steps .steps-div {
   display: grid;
@@ -102,6 +106,7 @@ span {
   font-weight: 700;
   font-size: 25px;
   margin-bottom: 15px;
+  font-family: "Aclonica", sans-serif;
 }
 .steps .steps-div .step1 .number {
   position: absolute;
@@ -123,6 +128,7 @@ span {
   font-weight: 900;
   text-align: center;
   margin-bottom: 50px;
+  font-family: "Aclonica", sans-serif;
 }
 .share .socials {
   display: grid;
