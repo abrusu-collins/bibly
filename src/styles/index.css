@@ -111,8 +111,23 @@
   z-index: 1;
 }
 
+.share {
+  margin-bottom: 100px;
+}
+.share .header {
+  font-size: 50px;
+  font-weight: 900;
+  text-align: center;
+}
+.share .socials {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 30%;
+  margin: auto;
+}
 .share img {
   filter: grayscale(100%);
+  width: 60%;
 }
 .share img:hover {
   filter: grayscale(0%);

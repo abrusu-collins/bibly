@@ -1,6 +1,19 @@
 .share {
+    margin-bottom: 100px;
+    & .header{
+        font-size: 50px;
+        font-weight: 900;
+       text-align: center;
+    }
+    & .socials{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        width: 30%;
+        margin: auto;
+    }
   & img {
     filter: grayscale(100%);
+    width: 60%;
     &:hover {
       filter: grayscale(0%);
     }
