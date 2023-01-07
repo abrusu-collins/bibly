@@ -118,6 +118,7 @@
   font-size: 50px;
   font-weight: 900;
   text-align: center;
+  margin-bottom: 50px;
 }
 .share .socials {
   display: grid;
