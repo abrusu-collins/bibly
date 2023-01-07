@@ -110,3 +110,10 @@
   position: relative;
   z-index: 1;
 }
+
+.share img {
+  filter: grayscale(100%);
+}
+.share img:hover {
+  filter: grayscale(0%);
+}
