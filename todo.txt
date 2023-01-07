@@ -1,14 +1,6 @@
-landing page
-
-process
-
-1. click
-2. choose your bible verses
-3. choose your background
-4. Save or Share
-
- share
- social media icons will have a grayscale, hover revelas main color (ayo)
-
-
 app page
+categorized
+api 
+backgrounds
+
+downlad and share buttons
