@@ -7,6 +7,10 @@
   color: #484d51;
 }
 
+span {
+  font-weight: 900;
+}
+
 .hero {
   background-color: #ffffff;
   display: grid;
@@ -132,4 +136,9 @@
 }
 .share img:hover {
   filter: grayscale(0%);
+}
+
+footer {
+  margin: 150px 0 50px 0;
+  text-align: center;
 }
