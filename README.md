@@ -1,1 +1,1 @@
-An app for generating and sharing bible verses
+An app for generating and sharing aesthetically pleasing bible verse images
