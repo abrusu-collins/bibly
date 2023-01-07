@@ -4,7 +4,7 @@ function Hero() {
   return (
     <div className="hero">
       <div className="hero-text">
-        <p className="hero-title">Bibly</p>
+        <p className="hero-header">Bibly</p>
         <p className="hero-description">
           This app is a platform for generating and sharing beautiful images of
           Bible verses. The app aims to provide a visually appealing and

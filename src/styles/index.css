@@ -21,7 +21,7 @@ span {
   align-items: center;
   margin: 200px auto 200px auto;
 }
-.hero .hero-text .hero-title {
+.hero .hero-text .hero-header {
   font-size: 50px;
   font-weight: 900;
   -webkit-text-decoration: underline wavy #f075c6;
