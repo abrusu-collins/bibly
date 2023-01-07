@@ -13,10 +13,9 @@
         margin: auto;
     }
   & img {
-    filter: grayscale(100%);
     width: 60%;
     &:hover {
-      filter: grayscale(0%);
-    }
+    filter: grayscale(100%);
+}
   }
 }
