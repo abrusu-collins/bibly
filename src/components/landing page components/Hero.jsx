@@ -10,7 +10,7 @@ function Hero() {
           Bible verses. The app aims to provide a visually appealing and
           inspiring way for people to connect with the teachings of the Bible.
         </p>
-        <a href="">Start Generator</a>
+        <a href="/app">Start Generator</a>
       </div>
 
       <img src={heroImg} alt="heroImage" />
