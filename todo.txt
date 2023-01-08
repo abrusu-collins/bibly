@@ -1,6 +1,5 @@
 app page
-categorized
-api 
-backgrounds
+2 halves(left  input element for verse: canvas: download and share button,
+ right: editing tools(background cats, fonts, borders, font size))
 
-downlad and share buttons
+hoiberg
