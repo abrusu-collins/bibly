@@ -3,3 +3,18 @@ app page
  right: editing tools(background cats, fonts, borders, font size, text color in hex))
 
 hoiberg
+
+
+background
+-solid
+-gradient
+-pattern
+
+choose your quote and get random background
+get random quote and background
+
+
+
+https://app.durable.co/website-builder?w=63a8408bd7f36082470e5e0e
+https://app.durable.co/website-builder?w=63a84167658d15a28aa5e93b
+https://app.durable.co/website-builder?w=63a841c8f701a861c4c732c6
