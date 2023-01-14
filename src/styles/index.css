@@ -69,7 +69,7 @@ span {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
-  width: 80%;
+  width: 65%;
   margin: auto;
   padding-top: 30px;
 }
