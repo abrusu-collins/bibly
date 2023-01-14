@@ -17,12 +17,12 @@ function Marquee() {
       <div className="top">
         <img src={bv2} alt="" />
         <img src={bv3} alt="" />
-        <img src={bv4} alt="" />
-        <img src={bv6} alt="" />
-        <img src={bv7} alt="" />
         <img src={bv8} alt="" />
         <img src={bv9} alt="" />
         <img src={bv10} alt="" />
+        <img src={bv4} alt="" />
+        <img src={bv6} alt="" />
+        <img src={bv7} alt="" />
       </div>
     </div>
   );
