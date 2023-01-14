@@ -30,7 +30,7 @@ function Steps() {
         </div>
 
         <div className="step1">
-        <p className="step-header">Choose your background</p>
+        <p className="step-header">Customize your image</p>
           <p className="number">3</p>
           <p className="step-description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
