@@ -1,10 +1,11 @@
-import triangle from "../../imgs/triangle.png";
+import star from "../../imgs/star.png";
+
 function Steps() {
   return (
     <div className="steps">
       <p className="header">Steps to generate your Image</p>
       <div className="img1">
-        <img src={triangle} alt="" />
+        <img src={star} alt="" />
       </div>
       <div className="steps-div">
         <div className="step1">
@@ -52,7 +53,7 @@ function Steps() {
         </div>
       </div>
       <div className="img2">
-        <img src={triangle} alt="" />
+        <img src={star} alt="" />
       </div>
     </div>
   );
