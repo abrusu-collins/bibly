@@ -188,9 +188,10 @@ form button:hover {
   margin: 100px auto;
 }
 .dataandediting .data .versediv {
-  background-image: linear-gradient(90deg, rgb(243, 114, 209) 0%, rgb(44, 19, 241) 100%);
+  background-image: linear-gradient(45deg, rgb(221, 15, 86), rgb(198, 192, 66));
   padding: 45px;
   text-align: center;
+  border-radius: 5px;
 }
 .dataandediting .data .versediv .verse {
   text-align: left;
