@@ -4,8 +4,8 @@ function Form() {
     const [userinputs,setuserinputs] = useState({book:"",chapter:"",verse:""});
     const generate = (e)=>{
         e.preventDefault();
-        console.log(`https://bible-api.com/${userinputs.book}%20${userinputs.chapter}:${userinputs.verse}`
-        );
+        fetch(`https://bible-api.com/${userinputs.book}%20${userinputs.chapter}:${userinputs.verse}`).then((response)=>{return response.json()}).then((data)=>{console.log(data);})
+
     }
     return ( <>
     <form >

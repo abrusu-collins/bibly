@@ -175,3 +175,6 @@ form button {
   -webkit-box-shadow: 10px 10px 0px -4px rgb(0, 0, 0);
   -moz-box-shadow: 10px 10px 0px -4px rgb(0, 0, 0);
 }
+form button:hover {
+  cursor: pointer;
+}
