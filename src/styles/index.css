@@ -188,8 +188,7 @@ form button:hover {
   margin: 100px auto;
 }
 .dataandediting .data .versediv {
-  background-image: linear-gradient(90deg, rgb(70, 230, 156) 0%, rgb(70, 230, 156) 17%, rgb(103, 173, 150) 17%, rgb(103, 173, 150) 19%, rgb(136, 116, 144) 19%, rgb(136, 116, 144) 56%, rgb(169, 59, 137) 56%, rgb(169, 59, 137) 94%, rgb(202, 2, 131) 94%, rgb(202, 2, 131) 100%), linear-gradient(0deg, rgb(70, 230, 156) 0%, rgb(70, 230, 156) 17%, rgb(103, 173, 150) 17%, rgb(103, 173, 150) 19%, rgb(136, 116, 144) 19%, rgb(136, 116, 144) 56%, rgb(169, 59, 137) 56%, rgb(169, 59, 137) 94%, rgb(202, 2, 131) 94%, rgb(202, 2, 131) 100%), linear-gradient(45deg, rgb(70, 230, 156) 0%, rgb(70, 230, 156) 17%, rgb(103, 173, 150) 17%, rgb(103, 173, 150) 19%, rgb(136, 116, 144) 19%, rgb(136, 116, 144) 56%, rgb(169, 59, 137) 56%, rgb(169, 59, 137) 94%, rgb(202, 2, 131) 94%, rgb(202, 2, 131) 100%), linear-gradient(90deg, rgb(34, 25, 252), rgb(48, 3, 107));
-  background-blend-mode: overlay, overlay, overlay, normal;
+  background-image: radial-gradient(circle at bottom left, rgb(42, 13, 128) 0%, rgb(42, 13, 128) 4%, rgb(51, 19, 137) 4%, rgb(51, 19, 137) 8%, rgb(59, 25, 147) 8%, rgb(59, 25, 147) 12%, rgb(68, 31, 156) 12%, rgb(68, 31, 156) 16%, rgb(77, 36, 165) 16%, rgb(77, 36, 165) 20%, rgb(86, 42, 174) 20%, rgb(86, 42, 174) 24%, rgb(94, 48, 184) 24%, rgb(94, 48, 184) 28%, rgb(103, 54, 193) 28%, rgb(103, 54, 193) 100%);
   padding: 50px;
   text-align: center;
   border-radius: 5px;
