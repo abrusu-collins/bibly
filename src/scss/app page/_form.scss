@@ -1,0 +1,27 @@
+form{
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto 20px auto;
+    width: 40%;
+    & input{
+        margin-bottom: 15px;
+        background-color: $background_color2;
+        width: 100%;
+        padding: 15px;
+        border: none;
+        border-radius: 5px;
+    }
+    & button{
+        color: $background_color;
+        background-color: $button_color;
+        padding: 18px 32.5px;
+        border-radius: 30px;
+        border: none;
+        box-shadow: 10px 10px 0px -4px rgba(0, 0, 0, 1);
+        -webkit-box-shadow: 10px 10px 0px -4px rgba(0, 0, 0, 1);
+        -moz-box-shadow: 10px 10px 0px -4px rgba(0, 0, 0, 1);
+    }
+}

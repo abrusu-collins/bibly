@@ -147,3 +147,31 @@ footer {
   margin: 150px 0 50px 0;
   text-align: center;
 }
+
+form {
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto 20px auto;
+  width: 40%;
+}
+form input {
+  margin-bottom: 15px;
+  background-color: #edf3f2;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+}
+form button {
+  color: #ffffff;
+  background-color: #f075c6;
+  padding: 18px 32.5px;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 10px 10px 0px -4px rgb(0, 0, 0);
+  -webkit-box-shadow: 10px 10px 0px -4px rgb(0, 0, 0);
+  -moz-box-shadow: 10px 10px 0px -4px rgb(0, 0, 0);
+}
