@@ -7,8 +7,11 @@ function DataAndEditing() {
   return (
     <div className="dataandediting">
       <div className="data">
+        <div className="versediv">
         <p className="verse">{verse}</p>
         <p className="reference">{reference}</p>
+        </div>
+
       </div>
 
       <div className="editing">
