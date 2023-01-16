@@ -178,3 +178,18 @@ form button {
 form button:hover {
   cursor: pointer;
 }
+
+.dataandediting {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 3rem;
+  width: 85%;
+  margin: 100px auto;
+}
+.dataandediting .data {
+  background-image: linear-gradient(90deg, rgb(243, 114, 209) 0%, rgb(44, 19, 241) 100%);
+}
+.dataandediting .data p {
+  color: white;
+}
