@@ -8,6 +8,7 @@ hoiberg
 background
 -solid
 -gradient
+-mesh gradients
 -pattern
 
 choose your quote and get random background
