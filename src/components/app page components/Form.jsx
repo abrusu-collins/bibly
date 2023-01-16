@@ -1,14 +1,17 @@
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { change } from "../../features/verse/verseSlice";
+import {changeVerse,changeReference} from "../../features/verse/verseSlice";
 
 function Form() {
     const [userinputs,setuserinputs] = useState({book:"",chapter:"",verse:""});
     const verse = useSelector((state) => state.verse.verse);
+    const reference = useSelector((state) => state.verse.reference);
+
+
     const dispach = useDispatch()
     const generate = (e)=>{
         e.preventDefault();
-        fetch(`https://bible-api.com/${userinputs.book}%20${userinputs.chapter}:${userinputs.verse}`).then((response)=>{return response.json()}).then((data)=>{console.log(data.text);dispach(change(data.text))})
+        fetch(`https://bible-api.com/${userinputs.book}%20${userinputs.chapter}:${userinputs.verse}`).then((response)=>{return response.json()}).then((data)=>{console.log(data.text);dispach(changeVerse(data));dispach(changeReference(data))})
 
     }
     return ( <>
@@ -19,6 +22,8 @@ function Form() {
         <button type="submit" onClick={generate}>Generate verse</button>
         <br />
         <div>{verse}</div>
+        <div>{reference}</div>
+
     </form>
     </> );
 }

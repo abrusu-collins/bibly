@@ -9,11 +9,14 @@ const verseSlice = createSlice({
     name: "verse",
     initialState,
     reducers:{
-        change:(state, action)=>{
-            state.verse = action.payload
+        changeVerse:(state, action)=>{
+            state.verse = action.payload.text
+        },
+        changeReference:(state, action)=>{
+            state.reference = action.payload.reference
         }
     }
 })
 
 export default verseSlice.reducer
-export const {change} = verseSlice.actions
+export const {changeVerse,changeReference} = verseSlice.actions
