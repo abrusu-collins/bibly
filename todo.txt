@@ -21,6 +21,3 @@ https://app.durable.co/website-builder?w=63a841c8f701a861c4c732c6
 
 the website
 https://bible-api.com/
-
-API for the verses
-https://bible-api.com/mattew%203:1
