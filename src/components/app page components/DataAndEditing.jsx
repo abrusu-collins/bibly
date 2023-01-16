@@ -15,7 +15,9 @@ function DataAndEditing() {
       </div>
 
       <div className="editing">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quod ratione exercitationem dolor corrupti corporis sint ex consequuntur officiis sed! Exercitationem obcaecati incidunt suscipit nobis optio culpa officiis itaque porro?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quod ratione exercitationem dolor corrupti corporis sint ex consequuntur officiis sed! Exercitationem obcaecati incidunt suscipit nobis optio culpa officiis itaque porro?
+          
+        </p>
       </div>
     </div>
   );
