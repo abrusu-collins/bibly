@@ -21,3 +21,8 @@ https://app.durable.co/website-builder?w=63a841c8f701a861c4c732c6
 
 the website
 https://bible-api.com/
+
+
+
+
+more on the fecth loader display and also error handling
