@@ -1,11 +1,9 @@
 import { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import {changeVerse,changeReference} from "../../features/verse/verseSlice";
 
 function Form() {
     const [userinputs,setuserinputs] = useState({book:"",chapter:"",verse:""});
-    const verse = useSelector((state) => state.verse.verse);
-    const reference = useSelector((state) => state.verse.reference);
 
 
     const dispach = useDispatch()
@@ -21,8 +19,7 @@ function Form() {
         <input type="text" name="verse" id="verse" placeholder="verse number e.g 1, 2..." value={userinputs.verse} onChange={(e)=>{setuserinputs({...userinputs,verse:e.target.value})}} />
         <button type="submit" onClick={generate}>Generate verse</button>
         <br />
-        <div>{verse}</div>
-        <div>{reference}</div>
+
 
     </form>
     </> );
