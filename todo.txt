@@ -27,3 +27,4 @@ https://bible-api.com/
 
 
 more on the fecth loader display and also error handling
+html2canvas for downloading image 
