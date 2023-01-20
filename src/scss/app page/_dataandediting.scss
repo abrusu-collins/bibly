@@ -1,11 +1,10 @@
 .dataandediting{
     margin-top: 50px;
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-gap: 3rem;
+    grid-template-columns: 1.5fr 2fr;
+    grid-gap: 5rem;
     width: 85%;
     margin:100px  auto;
-
     & .data {
         & .versediv{
             // background-image: radial-gradient(circle at bottom left, rgb(42, 13, 128) 0%, rgb(42, 13, 128) 4%,rgb(51, 19, 137) 4%, rgb(51, 19, 137) 8%,rgb(59, 25, 147) 8%, rgb(59, 25, 147) 12%,rgb(68, 31, 156) 12%, rgb(68, 31, 156) 16%,rgb(77, 36, 165) 16%, rgb(77, 36, 165) 20%,rgb(86, 42, 174) 20%, rgb(86, 42, 174) 24%,rgb(94, 48, 184) 24%, rgb(94, 48, 184) 28%,rgb(103, 54, 193) 28%, rgb(103, 54, 193) 100%);
@@ -46,5 +45,22 @@
     & p{
         color: white;
     }
+    }
+
+    & .editing{
+        overflow-y: scroll;
+        & .backgrounds{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap: 1rem;
+            height: 50px;
+            & div{
+                padding: 40px;
+                border-radius: 5px;
+            }
+            &:hover{
+                cursor: pointer;
+            }
+        }
     }
 }

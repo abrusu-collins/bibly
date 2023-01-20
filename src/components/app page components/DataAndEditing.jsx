@@ -15,9 +15,12 @@ function DataAndEditing() {
       </div>
 
       <div className="editing">
-          {backgrounds.map((background)=>{
-            return <div key={background.id} style={{"backgroundImage":background.css}}></div>
+      <p className="backgrounds-title">Select Backgrounds</p>
+      <div className="backgrounds">
+        {backgrounds.map((background)=>{
+            return <div key={background.id} style={{"backgroundImage":background.css}} className={background.className}></div>
           })}
+      </div>
       </div>
     </div>
   );
