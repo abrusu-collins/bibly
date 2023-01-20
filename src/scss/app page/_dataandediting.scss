@@ -7,34 +7,12 @@
     margin:100px  auto;
     & .data {
         & .versediv{
-            // background-image: radial-gradient(circle at bottom left, rgb(42, 13, 128) 0%, rgb(42, 13, 128) 4%,rgb(51, 19, 137) 4%, rgb(51, 19, 137) 8%,rgb(59, 25, 147) 8%, rgb(59, 25, 147) 12%,rgb(68, 31, 156) 12%, rgb(68, 31, 156) 16%,rgb(77, 36, 165) 16%, rgb(77, 36, 165) 20%,rgb(86, 42, 174) 20%, rgb(86, 42, 174) 24%,rgb(94, 48, 184) 24%, rgb(94, 48, 184) 28%,rgb(103, 54, 193) 28%, rgb(103, 54, 193) 100%);
-            background-image: radial-gradient(at 84% 21%, hsla(10, 91%, 59%, 1) 0, hsla(10, 91%, 59%, 0) 50%),
-            radial-gradient(at 49% 73%, hsla(349, 95%, 58%, 1) 0, hsla(349, 95%, 58%, 0) 50%),
-            radial-gradient(at 21% 21%, hsla(133, 86%, 57%, 1) 0, hsla(133, 86%, 57%, 0) 50%),
-            radial-gradient(at 65% 38%, hsla(93, 88%, 70%, 1) 0, hsla(93, 88%, 70%, 0) 50%),
-            radial-gradient(at 66% 13%, hsla(254, 86%, 51%, 1) 0, hsla(254, 86%, 51%, 0) 50%),
-            radial-gradient(at 52% 12%, hsla(67, 94%, 58%, 1) 0, hsla(67, 94%, 58%, 0) 50%),
-            radial-gradient(at 44% 84%, hsla(88, 85%, 51%, 1) 0, hsla(88, 85%, 51%, 0) 50%),
-            radial-gradient(at 11% 33%, hsla(40, 92%, 64%, 1) 0, hsla(40, 92%, 64%, 0) 50%),
-            radial-gradient(at 60% 96%, hsla(165, 94%, 54%, 1) 0, hsla(165, 94%, 54%, 0) 50%),
-            radial-gradient(at 18% 75%, hsla(286, 88%, 54%, 1) 0, hsla(286, 88%, 54%, 0) 50%),
-            radial-gradient(at 77% 53%, hsla(170, 85%, 58%, 1) 0, hsla(170, 85%, 58%, 0) 50%),
-            radial-gradient(at 39% 88%, hsla(325, 93%, 56%, 1) 0, hsla(325, 93%, 56%, 0) 50%),
-            radial-gradient(at 78% 86%, hsla(285, 86%, 50%, 1) 0, hsla(285, 86%, 50%, 0) 50%),
-            radial-gradient(at 37% 41%, hsla(324, 94%, 51%, 1) 0, hsla(324, 94%, 51%, 0) 50%),
-            radial-gradient(at 93% 42%, hsla(258, 87%, 55%, 1) 0, hsla(258, 87%, 55%, 0) 50%),
-            radial-gradient(at 91% 22%, hsla(25, 85%, 56%, 1) 0, hsla(25, 85%, 56%, 0) 50%),
-            radial-gradient(at 58% 98%, hsla(52, 85%, 59%, 1) 0, hsla(52, 85%, 59%, 0) 50%),
-            radial-gradient(at 91% 94%, hsla(243, 85%, 55%, 1) 0, hsla(243, 85%, 55%, 0) 50%),
-            radial-gradient(at 37% 14%, hsla(10, 91%, 70%, 1) 0, hsla(10, 91%, 70%, 0) 50%),
-            radial-gradient(at 86% 62%, hsla(239, 91%, 60%, 1) 0, hsla(239, 91%, 60%, 0) 50%);
-
-            
+            background-image: radial-gradient(circle at bottom left, rgb(42, 13, 128) 0%, rgb(42, 13, 128) 4%,rgb(51, 19, 137) 4%, rgb(51, 19, 137) 8%,rgb(59, 25, 147) 8%, rgb(59, 25, 147) 12%,rgb(68, 31, 156) 12%, rgb(68, 31, 156) 16%,rgb(77, 36, 165) 16%, rgb(77, 36, 165) 20%,rgb(86, 42, 174) 20%, rgb(86, 42, 174) 24%,rgb(94, 48, 184) 24%, rgb(94, 48, 184) 28%,rgb(103, 54, 193) 28%, rgb(103, 54, 193) 100%);            
             padding: 50px;
             text-align: center;
             border-radius: 5px;
             & .verse{
-                // text-align: left;
+                text-align: left;
                 margin-bottom: 25px;
             }
             & .reference{
