@@ -15,6 +15,7 @@ function DataAndEditing() {
       </div>
 
       <div className="editing">
+        <p className="edit-header">Editting Options here👇</p>
       <p className="backgrounds-title">Select Backgrounds</p>
       <div className="backgrounds">
         {backgrounds.map((background)=>{
