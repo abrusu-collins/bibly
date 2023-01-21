@@ -13,7 +13,6 @@ span {
 }
 
 .hero {
-  background-color: #ffffff;
   display: grid;
   grid-template-columns: 1fr 1.7fr;
   width: 80%;

@@ -1,5 +1,4 @@
 .hero {
-  background-color: $background_color;
   display: grid;
   grid-template-columns: 1fr 1.7fr;
   width: 80%;
@@ -11,10 +10,10 @@
       font-size: 50px;
       font-weight: 900;
       text-decoration: underline wavy $button_color;
-      font-family: 'Aclonica', sans-serif;
+      font-family: "Aclonica", sans-serif;
     }
-    & .hero-description{
-        margin: 30px auto 35px auto;
+    & .hero-description {
+      margin: 30px auto 35px auto;
     }
   }
   & a {
