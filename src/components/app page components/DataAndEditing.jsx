@@ -22,8 +22,10 @@ function DataAndEditing() {
           <p className="verse">{verse}</p>
           <p className="reference">{reference}</p>
         </div>
-
+        <div className="share-and-download">
         <button onClick={downloadImage}>Download Image</button>
+          <button>Share Image</button>
+        </div>
       </div>
 
       <div className="editing">

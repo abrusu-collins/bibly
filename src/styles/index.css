@@ -187,7 +187,7 @@ form button:hover {
   margin: 100px auto;
 }
 .dataandediting .data .versediv {
-  background-image: radial-gradient(circle at bottom left, rgb(42, 13, 128) 0%, rgb(42, 13, 128) 4%, rgb(51, 19, 137) 4%, rgb(51, 19, 137) 8%, rgb(59, 25, 147) 8%, rgb(59, 25, 147) 12%, rgb(68, 31, 156) 12%, rgb(68, 31, 156) 16%, rgb(77, 36, 165) 16%, rgb(77, 36, 165) 20%, rgb(86, 42, 174) 20%, rgb(86, 42, 174) 24%, rgb(94, 48, 184) 24%, rgb(94, 48, 184) 28%, rgb(103, 54, 193) 28%, rgb(103, 54, 193) 100%);
+  background-image: repeating-linear-gradient(135deg, rgba(0, 0, 0, 0.04) 0px, rgba(0, 0, 0, 0.04) 2px, transparent 2px, transparent 4px), linear-gradient(0deg, rgb(242, 42, 242), rgb(19, 61, 51));
   padding: 50px;
   text-align: center;
   border-radius: 5px;
@@ -202,6 +202,24 @@ form button:hover {
 }
 .dataandediting .data p {
   color: white;
+}
+.dataandediting .data .share-and-download {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+.dataandediting .data .share-and-download button {
+  color: #ffffff;
+  background-color: #f075c6;
+  padding: 18px 32.5px;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 10px 10px 0px -4px rgb(0, 0, 0);
+  -webkit-box-shadow: 10px 10px 0px -4px rgb(0, 0, 0);
+  -moz-box-shadow: 10px 10px 0px -4px rgb(0, 0, 0);
+}
+.dataandediting .data .share-and-download button:hover {
+  cursor: pointer;
 }
 .dataandediting .editing {
   overflow-y: scroll;
