@@ -1,27 +1,45 @@
+import { useRef } from "react";
 import { useSelector } from "react-redux";
+import * as htmlToImage from "html-to-image";
 import backgrounds from "../../json files/backgrounds.json";
+
 function DataAndEditing() {
-    const verse = useSelector((state) => state.verse.verse);
-    const reference = useSelector((state) => state.verse.reference);
+  const verse = useSelector((state) => state.verse.verse);
+  const reference = useSelector((state) => state.verse.reference);
+  const domEl = useRef(null);
+  const downloadImage = async () => {
+    const dataUrl = await htmlToImage.toPng(domEl.current);
+    const link = document.createElement("a");
+    link.download = "verse.png";
+    link.href = dataUrl;
+    link.click();
+  };
 
   return (
     <div className="dataandediting">
       <div className="data">
-        <div className="versediv">
-        <p className="verse">{verse}</p>
-        <p className="reference">{reference}</p>
+        <div className="versediv" id="domEl" ref={domEl}>
+          <p className="verse">{verse}</p>
+          <p className="reference">{reference}</p>
         </div>
 
+        <button onClick={downloadImage}>Download Image</button>
       </div>
 
       <div className="editing">
         <p className="edit-header">Editing Options here👇</p>
-      <p className="backgrounds-title">Select Backgrounds</p>
-      <div className="backgrounds">
-        {backgrounds.map((background)=>{
-            return <div key={background.id} style={{"backgroundImage":background.css}} className={background.className}></div>
+        <p className="backgrounds-title">Select Backgrounds</p>
+        <div className="backgrounds">
+          {backgrounds.map((background) => {
+            return (
+              <div
+                key={background.id}
+                style={{ backgroundImage: background.css }}
+                className={background.className}
+              ></div>
+            );
           })}
-      </div>
+        </div>
       </div>
     </div>
   );
