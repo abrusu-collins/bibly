@@ -7,11 +7,9 @@
   margin: 100px auto;
   & .data {
     & .versediv {
-      background-image: radial-gradient(
-        circle farthest-corner at 32.7% 82.7%,
-        rgba(173, 0, 171, 1) 8.3%,
-        rgba(15, 51, 92, 1) 79.4%
-      );
+      background-image: radial-gradient(circle at 1% 52%, rgba(139, 139, 139,0.05) 0%, rgba(139, 139, 139,0.05) 50%,rgba(21, 21, 21,0.05) 50%, rgba(21, 21, 21,0.05) 100%),radial-gradient(circle at 41% 28%, rgba(81, 81, 81,0.05) 0%, rgba(81, 81, 81,0.05) 50%,rgba(7, 7, 7,0.05) 50%, rgba(7, 7, 7,0.05) 100%),radial-gradient(circle at 48% 1%, rgba(93, 93, 93,0.05) 0%, rgba(93, 93, 93,0.05) 50%,rgba(7, 7, 7,0.05) 50%, rgba(7, 7, 7,0.05) 100%),linear-gradient(255deg, rgb(156, 41, 132),rgb(47, 14, 122));      
+
+
       padding: 50px;
       text-align: center;
       border-radius: 5px;
@@ -51,7 +49,7 @@
     overflow-y: scroll;
     & .backgrounds {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       grid-gap: 1rem;
       height: 150px;
       & div {

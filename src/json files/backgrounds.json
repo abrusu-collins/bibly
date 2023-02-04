@@ -7,7 +7,7 @@
     {
         "id":2,
         "className":"two",
-        "css":"linear-gradient(90deg, rgb(223, 90, 189),rgb(140, 2, 153))"
+        "css":"linear-gradient( 109.6deg,  rgba(8,8,247,0.91) 12.7%, rgba(250,5,5,0.91) 92.2% )"
     },
     {
         "id":3,
@@ -17,12 +17,12 @@
     {
         "id":4,
         "className":"four",
-        "css":"linear-gradient(0deg, rgb(217, 153, 41),rgb(211, 4, 236))"
+        "css":"linear-gradient(90deg, rgb(26, 16, 35),rgb(12, 216, 57))"
     }
     ,{
         "id":5,
         "className":"five",
-        "css":"linear-gradient( 64.3deg,  rgba(254,122,152,0.81) 17.7%, rgba(255,206,134,1) 64.7%, rgba(172,253,163,0.64) 112.1% )"
+        "css":"linear-gradient( 98.3deg,  rgba(0,0,0,1) 10.6%, rgba(255,0,0,1) 97.7% )"
     },
     {
         "id":6,
@@ -32,7 +32,7 @@
     {
         "id":7,
         "className":"seven",
-        "css":"linear-gradient( 64.5deg,  rgba(245,116,185,1) 14.7%, rgba(89,97,223,1) 88.7% )"
+        "css":"radial-gradient( circle 976px at 51.2% 51%,  rgba(11,27,103,1) 0%, rgba(16,66,157,1) 0%, rgba(11,27,103,1) 17.3%, rgba(11,27,103,1) 58.8%, rgba(11,27,103,1) 71.4%, rgba(16,66,157,1) 100.2%, rgba(187,187,187,1) 100.2% )"
     }
     ,
     {
@@ -43,11 +43,43 @@
     {
         "id":9,
         "className":"nine",
-        "css":"radial-gradient( circle farthest-corner at 83.7% 4.3%,  rgba(173,0,171,1) 0%, rgba(15,51,92,1) 90% )"
+        "css":"linear-gradient( 180.8deg,  rgba(139,10,130,1) 6.9%, rgba(73,6,70,1) 73.2% )"
     },
     {
         "id":10,
         "className":"ten",
         "css":"linear-gradient(90deg, rgb(247, 14, 199),rgb(24, 34, 250))"
+    }
+    ,
+    {
+        "id":11,
+        "className":"eleven",
+        "css":"repeating-linear-gradient(135deg, hsla(146,0%,0%,0.15) 0px, hsla(146,0%,0%,0.15) 0px,transparent 0px, transparent 1px,hsla(146,0%,0%,0.15) 1px, hsla(146,0%,0%,0.15) 4px,transparent 4px, transparent 5px,hsla(146,0%,0%,0.15) 5px, hsla(146,0%,0%,0.15) 10px),repeating-linear-gradient(45deg, hsla(146,0%,0%,0.15) 0px, hsla(146,0%,0%,0.15) 0px,transparent 0px, transparent 1px,hsla(146,0%,0%,0.15) 1px, hsla(146,0%,0%,0.15) 4px,transparent 4px, transparent 5px,hsla(146,0%,0%,0.15) 5px, hsla(146,0%,0%,0.15) 10px),repeating-linear-gradient(0deg, hsla(146,0%,0%,0.15) 0px, hsla(146,0%,0%,0.15) 0px,transparent 0px, transparent 1px,hsla(146,0%,0%,0.15) 1px, hsla(146,0%,0%,0.15) 4px,transparent 4px, transparent 5px,hsla(146,0%,0%,0.15) 5px, hsla(146,0%,0%,0.15) 10px),repeating-linear-gradient(90deg, hsla(146,0%,0%,0.15) 0px, hsla(146,0%,0%,0.15) 0px,transparent 0px, transparent 1px,hsla(146,0%,0%,0.15) 1px, hsla(146,0%,0%,0.15) 4px,transparent 4px, transparent 5px,hsla(146,0%,0%,0.15) 5px, hsla(146,0%,0%,0.15) 10px),linear-gradient(90deg, rgb(60,60,60),rgb(60,60,60))"
+    },
+    {
+        "id":12,
+        "className":"twelve",
+        "css":"radial-gradient(circle at bottom left, rgb(42, 13, 128) 0%, rgb(42, 13, 128) 4%,rgb(51, 19, 137) 4%, rgb(51, 19, 137) 8%,rgb(59, 25, 147) 8%, rgb(59, 25, 147) 12%,rgb(68, 31, 156) 12%, rgb(68, 31, 156) 16%,rgb(77, 36, 165) 16%, rgb(77, 36, 165) 20%,rgb(86, 42, 174) 20%, rgb(86, 42, 174) 24%,rgb(94, 48, 184) 24%, rgb(94, 48, 184) 28%,rgb(103, 54, 193) 28%, rgb(103, 54, 193) 100%)"
+    },
+    {
+        "id":13,
+        "className":"thirteen",
+        "css":"radial-gradient(circle at center right, rgb(43, 36, 140) 0%, rgb(43, 36, 140) 64%,rgb(51, 30, 166) 64%, rgb(51, 30, 166) 80%,rgb(59, 23, 191) 80%, rgb(59, 23, 191) 86%,rgb(67, 17, 217) 86%, rgb(67, 17, 217) 92%,rgb(75, 10, 242) 92%, rgb(75, 10, 242) 100%)"
+    },
+    {
+        "id":14,
+        "className":"fourteen",
+        "css":"radial-gradient(circle at top right, rgb(180, 11, 207) 0%, rgb(180, 11, 207) 4%,rgb(153, 11, 198) 4%, rgb(153, 11, 198) 8%,rgb(126, 11, 189) 8%, rgb(126, 11, 189) 12%,rgb(99, 12, 181) 12%, rgb(99, 12, 181) 16%,rgb(72, 12, 172) 16%, rgb(72, 12, 172) 20%,rgb(45, 12, 163) 20%, rgb(45, 12, 163) 24%,transparent 24%, transparent 100%),radial-gradient(circle at bottom left, rgb(180, 11, 207) 0%, rgb(180, 11, 207) 4%,rgb(153, 11, 198) 4%, rgb(153, 11, 198) 8%,rgb(126, 11, 189) 8%, rgb(126, 11, 189) 12%,rgb(99, 12, 181) 12%, rgb(99, 12, 181) 16%,rgb(72, 12, 172) 16%, rgb(72, 12, 172) 20%,rgb(45, 12, 163) 20%, rgb(45, 12, 163) 24%,rgb(18, 12, 154) 24%, rgb(18, 12, 154) 100%)"
+    }
+    ,
+    {
+        "id":15,
+        "className":"fifteen",
+        "css":"radial-gradient(circle at 72% 83%, rgba(12, 12, 12,0.04) 0%, rgba(12, 12, 12,0.04) 50%,rgba(172, 172, 172,0.04) 50%, rgba(172, 172, 172,0.04) 100%),radial-gradient(circle at 57% 65%, rgba(11, 11, 11,0.04) 0%, rgba(11, 11, 11,0.04) 50%,rgba(222, 222, 222,0.04) 50%, rgba(222, 222, 222,0.04) 100%),radial-gradient(circle at 64% 31%, rgba(11, 11, 11,0.04) 0%, rgba(11, 11, 11,0.04) 50%,rgba(191, 191, 191,0.04) 50%, rgba(191, 191, 191,0.04) 100%),linear-gradient(130deg, rgb(5, 235, 123),rgb(47, 52, 6))"
+    },
+    {
+        "id":16,
+        "className":"sixteen",
+        "css":"radial-gradient(circle at 1% 52%, rgba(139, 139, 139,0.05) 0%, rgba(139, 139, 139,0.05) 50%,rgba(21, 21, 21,0.05) 50%, rgba(21, 21, 21,0.05) 100%),radial-gradient(circle at 41% 28%, rgba(81, 81, 81,0.05) 0%, rgba(81, 81, 81,0.05) 50%,rgba(7, 7, 7,0.05) 50%, rgba(7, 7, 7,0.05) 100%),radial-gradient(circle at 48% 1%, rgba(93, 93, 93,0.05) 0%, rgba(93, 93, 93,0.05) 50%,rgba(7, 7, 7,0.05) 50%, rgba(7, 7, 7,0.05) 100%),linear-gradient(255deg, rgb(156, 41, 132),rgb(47, 14, 122))"
     }
 ]
