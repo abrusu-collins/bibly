@@ -18,5 +18,33 @@
         "id":4,
         "className":"four",
         "css":"linear-gradient(0deg, rgb(217, 153, 41),rgb(211, 4, 236))"
+    },
+    {
+        "id":2,
+        "className":"two",
+        "css":"linear-gradient(90deg, rgb(223, 90, 189),rgb(140, 2, 153))"
+    },
+    {
+        "id":3,
+        "className":"three",
+        "css":"linear-gradient(145deg, rgba(232, 87, 237, 0.15) 0%,rgba(109, 137, 69, 0.15) 100%),linear-gradient(75deg, rgb(33, 138, 184),rgb(0, 241, 181))"
+    },    {
+        "id":2,
+        "className":"two",
+        "css":"linear-gradient(90deg, rgb(223, 90, 189),rgb(140, 2, 153))"
+    },
+    {
+        "id":3,
+        "className":"three",
+        "css":"linear-gradient(145deg, rgba(232, 87, 237, 0.15) 0%,rgba(109, 137, 69, 0.15) 100%),linear-gradient(75deg, rgb(33, 138, 184),rgb(0, 241, 181))"
+    },    {
+        "id":2,
+        "className":"two",
+        "css":"linear-gradient(90deg, rgb(223, 90, 189),rgb(140, 2, 153))"
+    },
+    {
+        "id":3,
+        "className":"three",
+        "css":"linear-gradient(145deg, rgba(232, 87, 237, 0.15) 0%,rgba(109, 137, 69, 0.15) 100%),linear-gradient(75deg, rgb(33, 138, 184),rgb(0, 241, 181))"
     }
 ]
