@@ -19,4 +19,35 @@
         "className":"four",
         "css":"linear-gradient(0deg, rgb(217, 153, 41),rgb(211, 4, 236))"
     }
+    ,{
+        "id":5,
+        "className":"five",
+        "css":"linear-gradient( 64.3deg,  rgba(254,122,152,0.81) 17.7%, rgba(255,206,134,1) 64.7%, rgba(172,253,163,0.64) 112.1% )"
+    },
+    {
+        "id":6,
+        "className":"six",
+        "css":"linear-gradient( 83.2deg,  rgba(150,93,233,1) 10.8%, rgba(99,88,238,1) 94.3% )"
+    },
+    {
+        "id":7,
+        "className":"seven",
+        "css":"linear-gradient( 64.5deg,  rgba(245,116,185,1) 14.7%, rgba(89,97,223,1) 88.7% )"
+    }
+    ,
+    {
+        "id":8,
+        "className":"eight",
+        "css":"radial-gradient( circle farthest-corner at 32.7% 82.7%,  rgba(173,0,171,1) 8.3%, rgba(15,51,92,1) 79.4% )"
+    },
+    {
+        "id":9,
+        "className":"nine",
+        "css":"radial-gradient( circle farthest-corner at 83.7% 4.3%,  rgba(173,0,171,1) 0%, rgba(15,51,92,1) 90% )"
+    },
+    {
+        "id":10,
+        "className":"ten",
+        "css":"linear-gradient(90deg, rgb(247, 14, 199),rgb(24, 34, 250))"
+    }
 ]
