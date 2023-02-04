@@ -15,21 +15,18 @@ choose your quote and get random background
 get random quote and background
 
 
-
-https://app.durable.co/website-builder?w=63a8408bd7f36082470e5e0e
-https://app.durable.co/website-builder?w=63a84167658d15a28aa5e93b
-https://app.durable.co/website-builder?w=63a841c8f701a861c4c732c6
-
-the website
-https://bible-api.com/
-
-
-
-
 more on the fecth loader display and also error handling
-html2canvas for downloading image 
+
 
 add confetti after image is downloaded
 https://github.com/Agezao/confetti-js
 
 add the feelings generated verse with chatgpt
+
+
+DONE
+
+the website
+https://bible-api.com/
+
+html2canvas for downloading image 
