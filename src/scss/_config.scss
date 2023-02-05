@@ -17,3 +17,6 @@ $button_shadow:#14181f;
 span{
     font-weight: 900;
 }
+.active{
+    border: 5px solid $button_color;
+}
