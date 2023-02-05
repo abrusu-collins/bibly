@@ -5,6 +5,9 @@ app page
 hoiberg
 
 
+navbar
+faqs
+
 background
 -solid
 -gradient
