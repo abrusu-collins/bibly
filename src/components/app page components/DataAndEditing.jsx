@@ -38,6 +38,7 @@ function DataAndEditing() {
                 key={background.id}
                 style={{ backgroundImage: background.css }}
                 className={background.className}
+                onClick={(e)=>{e.currentTarget.parentElement.parentElement.parentElement.firstChild.firstChild.style.backgroundImage=background.css}}
               ></div>
             );
           })}

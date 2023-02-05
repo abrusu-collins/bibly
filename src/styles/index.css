@@ -187,7 +187,7 @@ form button:hover {
   margin: 100px auto;
 }
 .dataandediting .data .versediv {
-  background-image: radial-gradient(circle at 1% 52%, rgba(139, 139, 139, 0.05) 0%, rgba(139, 139, 139, 0.05) 50%, rgba(21, 21, 21, 0.05) 50%, rgba(21, 21, 21, 0.05) 100%), radial-gradient(circle at 41% 28%, rgba(81, 81, 81, 0.05) 0%, rgba(81, 81, 81, 0.05) 50%, rgba(7, 7, 7, 0.05) 50%, rgba(7, 7, 7, 0.05) 100%), radial-gradient(circle at 48% 1%, rgba(93, 93, 93, 0.05) 0%, rgba(93, 93, 93, 0.05) 50%, rgba(7, 7, 7, 0.05) 50%, rgba(7, 7, 7, 0.05) 100%), linear-gradient(255deg, rgb(156, 41, 132), rgb(47, 14, 122));
+  background-image: linear-gradient(109.6deg, rgba(8, 8, 247, 0.91) 12.7%, rgba(250, 5, 5, 0.91) 92.2%);
   padding: 50px;
   text-align: center;
   border-radius: 5px;
