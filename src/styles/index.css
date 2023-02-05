@@ -230,13 +230,13 @@ form button:hover {
   cursor: pointer;
 }
 .dataandediting .editing {
-  overflow-y: scroll;
+  overflow-y: auto;
+  height: 250px;
 }
 .dataandediting .editing .backgrounds {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1rem;
-  height: 150px;
 }
 .dataandediting .editing .backgrounds div {
   padding: 40px;

@@ -31,6 +31,7 @@ function DataAndEditing() {
       <div className="editing">
         <p className="edit-header">Editing Options here👇</p>
         <p className="backgrounds-title">Select Backgrounds</p>
+
         <div className="backgrounds">
           {backgrounds.map((background) => {
             return (
@@ -40,12 +41,12 @@ function DataAndEditing() {
                 className={background.className}
                 onClick={(e) => {
                   e.currentTarget.parentElement.parentElement.parentElement.firstChild.firstChild.style.backgroundImage = background.css;
-                  let backGroundChildren = Array.from(
+                  let backgroundChildren = Array.from(
                     e.currentTarget.parentElement.children
                   );
-                  backGroundChildren.forEach((backGroundChild) => {
-                    if (backGroundChild.classList.contains("active")) {
-                      backGroundChild.classList.remove("active");
+                  backgroundChildren.forEach((backgroundChild) => {
+                    if (backgroundChild.classList.contains("active")) {
+                      backgroundChild.classList.remove("active");
                     }
                   });
                   e.currentTarget.classList.add("active");
@@ -54,7 +55,15 @@ function DataAndEditing() {
             );
           })}
         </div>
+
+        <div className="solid-background">
+          <p className="solid-color-title">
+            Wanna use a Solid Color?
+          </p>
+          <input type="text" name="" id="" />
+        </div>
       </div>
+      
     </div>
   );
 }
