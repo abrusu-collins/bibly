@@ -3,7 +3,7 @@ import verseSlice from "../features/verse/verseSlice";
 
 const store = configureStore({
     reducer:{
-        verse:verseSlice
+        verse: verseSlice
     }
 })
 

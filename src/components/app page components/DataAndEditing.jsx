@@ -23,7 +23,7 @@ function DataAndEditing() {
           <p className="reference">{reference}</p>
         </div>
         <div className="share-and-download">
-        <button onClick={downloadImage}>Download Image</button>
+          <button onClick={downloadImage}>Download Image</button>
           <button>Share Image</button>
         </div>
       </div>
@@ -38,9 +38,16 @@ function DataAndEditing() {
                 key={background.id}
                 style={{ backgroundImage: background.css }}
                 className={background.className}
-                onClick={(e)=>{
-                  e.currentTarget.parentElement.parentElement.parentElement.firstChild.firstChild.style.backgroundImage=background.css;
-                  e.currentTarget.parentElement.children.classList.remove("active");
+                onClick={(e) => {
+                  e.currentTarget.parentElement.parentElement.parentElement.firstChild.firstChild.style.backgroundImage = background.css;
+                  let backGroundChildren = Array.from(
+                    e.currentTarget.parentElement.children
+                  );
+                  backGroundChildren.forEach((backGroundChild) => {
+                    if (backGroundChild.classList.contains("active")) {
+                      backGroundChild.classList.remove("active");
+                    }
+                  });
                   e.currentTarget.classList.add("active");
                 }}
               ></div>
