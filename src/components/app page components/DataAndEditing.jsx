@@ -38,7 +38,7 @@ function DataAndEditing() {
               <div
                 key={background.id}
                 style={{ backgroundImage: background.css }}
-                className={background.className}
+                className={background.className==="one"?"active":background.className}
                 onClick={(e) => {
                   e.currentTarget.parentElement.parentElement.parentElement.firstChild.firstChild.style.backgroundImage = background.css;
                   let backgroundChildren = Array.from(
