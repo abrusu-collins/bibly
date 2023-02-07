@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { useSelector } from "react-redux";
 import * as htmlToImage from "html-to-image";
 import backgrounds from "../../json files/backgrounds.json";
@@ -6,6 +6,7 @@ import backgrounds from "../../json files/backgrounds.json";
 function DataAndEditing() {
   const verse = useSelector((state) => state.verse.verse);
   const reference = useSelector((state) => state.verse.reference);
+  const [solidColor,setsolidColor] = useState("");
   const domEl = useRef(null);
   const downloadImage = async () => {
     const dataUrl = await htmlToImage.toPng(domEl.current);
@@ -60,7 +61,20 @@ function DataAndEditing() {
           <p className="solid-background-color-title">
             Wanna use a Solid Color?
           </p>
-          <input type="text" name="solidColor" id="solid-color" placeholder="Input HEX color code here" />
+          {/* <input type="text" name="solidColor" id="solid-color" placeholder="Input HEX color code here"  value={solidColor} onChange={
+            (e)=>{
+              setsolidColor(e.currentTarget.value);
+            if(solidColor.length===6){
+              // e.currentTarget.parentElement.parentElement.parentElement.firstChild.firstChild.attribues.remove("backgroundImage");
+              e.currentTarget.parentElement.parentElement.parentElement.firstChild.firstChild.style.backgroundColor = solidColor;
+              console.log(solidColor)
+            }
+            }}/> */}
+            <div className="solid-color-input-container">
+                <input type="text" name="solidColor" id="solid-color" placeholder="Input HEX color code here"  value={solidColor} />
+                <button>Use</button>
+
+            </div>
         </div>
       </div>
       
