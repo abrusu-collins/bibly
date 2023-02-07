@@ -1,6 +1,6 @@
 app page
 2 halves(left  input element for verse: canvas: download and share button,
- right: editing tools(background cats, fonts, borders, font size, text color in hex))
+ right: editing tools(background cats, fonts, borders, font size, text color in hex, resizing))
 
 hoiberg
 
