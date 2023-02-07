@@ -57,10 +57,10 @@ function DataAndEditing() {
         </div>
 
         <div className="solid-background">
-          <p className="solid-color-title">
+          <p className="solid-background-color-title">
             Wanna use a Solid Color?
           </p>
-          <input type="text" name="" id="" />
+          <input type="text" name="solidColor" id="solid-color" placeholder="Input HEX color code here" />
         </div>
       </div>
       

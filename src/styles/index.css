@@ -247,6 +247,22 @@ form button:hover {
   margin-bottom: 20px;
 }
 .dataandediting .editing .backgrounds {
+  margin-bottom: 20px;
+}
+.dataandediting .editing .solid-background .solid-background-color-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.dataandediting .editing .solid-background input {
+  margin-bottom: 150px;
+  background-color: #edf3f2;
+  width: 99%;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+}
+.dataandediting .editing .backgrounds {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1rem;

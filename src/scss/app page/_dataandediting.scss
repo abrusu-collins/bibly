@@ -62,6 +62,24 @@
       font-weight: 600;
       margin-bottom: 20px;
     }
+    & .backgrounds{
+      margin-bottom: 20px;
+    }
+    & .solid-background{
+      & .solid-background-color-title{
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 20px;
+      }
+      & input{
+        margin-bottom: 150px;
+        background-color: $background_color2;
+        width: 99%;
+        padding: 15px;
+        border: none;
+        border-radius: 5px;
+      }
+    }
     overflow-y: auto;
     height: 250px;
 
