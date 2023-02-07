@@ -63,7 +63,7 @@
       margin-bottom: 20px;
     }
     & .backgrounds{
-      margin-bottom: 20px;
+      margin-bottom: 40px;
     }
     & .solid-background{
       & .solid-background-color-title{
@@ -97,9 +97,9 @@
           padding: 18px 50px;
           border-radius: 30px;
           border: none;
-          // box-shadow: 10px 10px 0px -4px rgba(0, 0, 0, 1);
-          // -webkit-box-shadow: 10px 10px 0px -4px rgba(0, 0, 0, 1);
-          // -moz-box-shadow: 10px 10px 0px -4px rgba(0, 0, 0, 1);
+          box-shadow: 10px 10px 0px -4px rgba(0, 0, 0, 1);
+          -webkit-box-shadow: 10px 10px 0px -4px rgba(0, 0, 0, 1);
+          -moz-box-shadow: 10px 10px 0px -4px rgba(0, 0, 0, 1);
           &:hover{
               cursor: pointer;
           }

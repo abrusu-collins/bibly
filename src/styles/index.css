@@ -246,7 +246,7 @@ form button:hover {
   margin-bottom: 20px;
 }
 .dataandediting .editing .backgrounds {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .dataandediting .editing .solid-background .solid-background-color-title {
   font-size: 20px;
@@ -280,6 +280,9 @@ form button:hover {
   padding: 18px 50px;
   border-radius: 30px;
   border: none;
+  box-shadow: 10px 10px 0px -4px rgb(0, 0, 0);
+  -webkit-box-shadow: 10px 10px 0px -4px rgb(0, 0, 0);
+  -moz-box-shadow: 10px 10px 0px -4px rgb(0, 0, 0);
 }
 .dataandediting .editing .solid-background .solid-color-input-container button:hover {
   cursor: pointer;

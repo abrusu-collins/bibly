@@ -71,8 +71,12 @@ function DataAndEditing() {
             }
             }}/> */}
             <div className="solid-color-input-container">
-                <input type="text" name="solidColor" id="solid-color" placeholder="Input HEX color code here"  value={solidColor} />
-                <button>Use</button>
+                <input type="text" name="solidColor" id="solid-color" placeholder="Input HEX color code here"  value={solidColor} onChange={(e)=>{setsolidColor(e.currentTarget.value)}} />
+                <button onClick={(e)=>{
+                  e.currentTarget.parentElement.parentElement.parentElement.parentElement.firstChild.firstChild.styles.backgroundImage=' ';
+                  e.currentTarget.parentElement.parentElement.parentElement.parentElement.firstChild.firstChild.style.backgroundColor = solidColor;
+
+                }}>Use</button>
 
             </div>
         </div>
