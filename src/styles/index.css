@@ -296,6 +296,6 @@ form button:hover {
   padding: 40px;
   border-radius: 5px;
 }
-.dataandediting .editing .backgrounds:hover {
+.dataandediting .editing .backgrounds div:hover {
   cursor: pointer;
 }

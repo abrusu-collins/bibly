@@ -117,10 +117,11 @@
       & div {
         padding: 40px;
         border-radius: 5px;
+        &:hover {
+          cursor: pointer;
+        }
       }
-      &:hover {
-        cursor: pointer;
-      }
+
     }
   }
 }
