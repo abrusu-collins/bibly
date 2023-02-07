@@ -236,6 +236,16 @@ form button:hover {
   overflow-y: auto;
   height: 250px;
 }
+.dataandediting .editing .edit-header {
+  font-size: 30px;
+  font-weight: 900;
+  margin-bottom: 40px;
+}
+.dataandediting .editing .backgrounds-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
 .dataandediting .editing .backgrounds {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
