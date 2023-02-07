@@ -161,7 +161,7 @@ form {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 50px auto 20px auto;
+  margin: 50px auto 40px auto;
   width: 40%;
 }
 form input {
@@ -187,14 +187,17 @@ form button:hover {
 }
 
 .dataandediting {
-  margin-top: 50px;
+  padding-top: 80px;
+  border-top: 2px dashed rgb(177, 176, 176);
   display: grid;
   grid-template-columns: 1.5fr 2fr;
   grid-gap: 5rem;
   width: 85%;
-  margin: 100px auto;
+  margin: 80px auto;
 }
 .dataandediting .data .versediv {
+  height: 200px;
+  width: 500px;
   background-image: linear-gradient(45deg, rgb(252, 169, 90), rgb(162, 85, 124), rgb(71, 0, 157));
   padding: 50px;
   text-align: center;
