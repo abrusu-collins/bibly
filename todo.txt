@@ -2,6 +2,11 @@ app page
 2 halves(left  input element for verse: canvas: download and share button,
  right: editing tools(background cats, fonts, borders, font size, text color in hex, resizing))
 
+3 ways to get your verse
+1. your own verse
+2. verse based on a topic
+3. discover random verse
+
 hoiberg
 
 write reusable function and cut down long lines in the event handlers, don't be a dumb boy
