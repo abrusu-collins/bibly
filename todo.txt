@@ -4,7 +4,7 @@ app page
 
 hoiberg
 
-
+write reusable function and cut down long lines in the event handlers, don't be a dumb boy
 navbar
 faqs
 
