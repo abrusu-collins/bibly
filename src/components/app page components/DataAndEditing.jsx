@@ -37,6 +37,12 @@ function DataAndEditing() {
 
   }
 
+  function fontHandler(e,fontCss){
+    e.currentTarget.parentElement.parentElement.parentElement.firstChild.firstChild.style.fontFamily = fontCss;
+
+  }
+  
+
   return (
     <div className="dataandediting">
       <div className="data">
@@ -87,7 +93,7 @@ function DataAndEditing() {
         <div className="fonts">
           <p className="fonts-title">Choose your font</p>
           <select name="fonts" id="fonts"
-          onChange={(e)=>{console.log(e.currentTarget.value)}}>
+          onChange={(e)=>{fontHandler(e, e.currentTarget.value)}}>
           {fonts.map((font)=>{
            return <option 
            key={font.id}
@@ -95,7 +101,7 @@ function DataAndEditing() {
             >{font.fontName}
             </option>
           })}
-  </select>
+          </select>
         </div>
       </div>
       
