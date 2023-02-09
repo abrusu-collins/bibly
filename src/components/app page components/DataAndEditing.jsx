@@ -47,7 +47,7 @@ function DataAndEditing() {
       setItalics(!isItalic);
       console.log(isItalic)
       isItalic? 
-      e.currentTarget.parentElement.parentElement.firstChild.firstChild.style.fontStyle="italics"
+e.currentTarget.parentElement.parentElement.firstChild.firstChild.style.fontStyle="italics"
       :e.currentTarget.parentElement.parentElement.firstChild.firstChild.style.fontStyle="normal"
   }
 
