@@ -2,6 +2,8 @@ import { useRef, useState } from "react";
 import { useSelector } from "react-redux";
 import * as htmlToImage from "html-to-image";
 import backgrounds from "../../json files/backgrounds.json";
+import fonts from "../../json files/fonts.json";
+
 
 function DataAndEditing() {
   const verse = useSelector((state) => state.verse.verse);
@@ -80,6 +82,11 @@ function DataAndEditing() {
                 <button onClick={solidBackgroundHandler}>Use</button>
 
             </div>
+        </div>
+
+        <div className="fonts">
+          <p className="fonts-title">Choose your font</p>
+          
         </div>
       </div>
       
