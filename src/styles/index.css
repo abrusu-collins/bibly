@@ -310,6 +310,7 @@ form button:hover {
   background-color: #edf3f2;
   border: none;
   padding: 30px;
+  margin-bottom: 40px;
 }
 .dataandediting .editing .fonts select:focus {
   outline: none;

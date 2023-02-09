@@ -9,6 +9,7 @@ function DataAndEditing() {
   const verse = useSelector((state) => state.verse.verse);
   const reference = useSelector((state) => state.verse.reference);
   const [solidColor,setsolidColor] = useState("");
+  const [isItalic,setItalics] = useState(false);
   const domEl = useRef(null);
   const downloadImage = async () => {
     const dataUrl = await htmlToImage.toPng(domEl.current);
@@ -42,6 +43,13 @@ function DataAndEditing() {
 
   }
   
+  const toggleItalics = (e) => {
+      setItalics(!isItalic);
+      console.log(isItalic)
+      isItalic? 
+      e.currentTarget.parentElement.parentElement.firstChild.firstChild.style.fontStyle="italics"
+      :e.currentTarget.parentElement.parentElement.firstChild.firstChild.style.fontStyle="normal"
+  }
 
   return (
     <div className="dataandediting">
@@ -103,6 +111,11 @@ function DataAndEditing() {
           })}
           </select>
         </div>
+
+          <button onClick={toggleItalics}>
+            {isItalic?"Use Normal":"Use Italics"}
+          </button>
+
       </div>
       
     </div>
