@@ -2,68 +2,57 @@
     {
         "id":1,
         "fontName":"Inter(Default)",
-        "className":"one",
         "fontFamily":"'Inter', sans-serif"
     },
     {
         "id":2,
         "fontName":"Roboto",
-        "className":"two",
         "fontFamily":"'Roboto', sans-serif"
     },
     {
         "id":3,
         "fontName":"Montserrat",
-        "className":"three",
         "fontFamily":"'Montserrat', sans-serif"
     },
     {
         "id":4,
         "fontName":"Lato",
-        "className":"four",
         "fontFamily":"'Lato', sans-serif"
     }
     ,{
         "id":5,
         "fontName":"Poppins",
-        "className":"five",
         "fontFamily":"'Poppins', sans-serif"
     },
     {
         "id":6,
         "fontName":"Raleway",
-        "className":"six",
         "fontFamily":"'Raleway', sans-serif"
     },
     {
         "id":7,
         "fontName":"Ubuntu",
-        "className":"seven",
         "fontFamily":"'Ubuntu', sans-serif"
     }
     ,
     {
         "id":8,
         "fontName":"Nunito",
-        "className":"eight",
         "fontFamily":"'Nunito', sans-serif"
     },
     {
         "id":9,
-        "fontName":"'PT Sans",
-        "className":"nine",
+        "fontName":"PT Sans",
         "fontFamily":"'PT Sans', sans-serif"
     },
     {
         "id":10,
         "fontName":"Quicksand",
-        "className":"ten",
         "fontFamily":"'Quicksand', sans-serif"
     },
     {
         "id":11,
         "fontName":"Noto Sans",
-        "className":"eleven",
         "fontFamily":"'Noto Sans', sans-serif"
     }
     
