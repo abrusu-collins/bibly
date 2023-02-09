@@ -107,6 +107,22 @@
       }
 
     }
+    & .fonts{
+      & .fonts-title{
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 20px;
+      }
+      & select{
+        width: 99%;
+        background-color: $background_color2;
+        border: none;
+        padding: 30px;
+        &:focus{
+          outline: none;
+        }
+      }
+    }
     overflow-y: auto;
     height: 350px;
 

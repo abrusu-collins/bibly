@@ -297,6 +297,20 @@ form button:hover {
 .dataandediting .editing .solid-background .solid-color-input-container button:hover {
   cursor: pointer;
 }
+.dataandediting .editing .fonts .fonts-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.dataandediting .editing .fonts select {
+  width: 99%;
+  background-color: #edf3f2;
+  border: none;
+  padding: 30px;
+}
+.dataandediting .editing .fonts select:focus {
+  outline: none;
+}
 .dataandediting .editing .backgrounds {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

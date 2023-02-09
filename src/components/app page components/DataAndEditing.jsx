@@ -86,9 +86,14 @@ function DataAndEditing() {
 
         <div className="fonts">
           <p className="fonts-title">Choose your font</p>
-          <select name="fonts" id="fonts">
+          <select name="fonts" id="fonts"
+          onChange={(e)=>{console.log(e.currentTarget.value)}}>
           {fonts.map((font)=>{
-           return <option value={font.fontFamily}>{font.fontName}</option>
+           return <option 
+           key={font.id}
+            value={font.fontFamily}
+            >{font.fontName}
+            </option>
           })}
   </select>
         </div>
