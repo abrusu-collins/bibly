@@ -233,7 +233,7 @@ form button:hover {
 }
 .dataandediting .editing {
   overflow-y: auto;
-  height: 250px;
+  height: 350px;
 }
 .dataandediting .editing .edit-header {
   font-size: 30px;
