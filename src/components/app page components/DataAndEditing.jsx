@@ -16,6 +16,25 @@ function DataAndEditing() {
     link.click();
   };
 
+  function backgroundClick (e, backgroundCss ){
+    e.currentTarget.parentElement.parentElement.parentElement.firstChild.firstChild.style.backgroundImage = backgroundCss;
+    let backgroundChildren = Array.from(
+      e.currentTarget.parentElement.children
+    );
+    backgroundChildren.forEach((backgroundChild) => {
+      if (backgroundChild.classList.contains("active")) {
+        backgroundChild.classList.remove("active");
+      }
+    });
+    e.currentTarget.classList.add("active");
+  }
+
+  const solidBackgroundHandler = (e)=>{
+    // e.currentTarget.parentElement.parentElement.parentElement.parentElement.firstChild.firstChild.styles.backgroundImage=' ';
+    e.currentTarget.parentElement.parentElement.parentElement.parentElement.firstChild.firstChild.style.backgroundColor = solidColor;
+
+  }
+
   return (
     <div className="dataandediting">
       <div className="data">
@@ -40,18 +59,7 @@ function DataAndEditing() {
                 key={background.id}
                 style={{ backgroundImage: background.css }}
                 className={background.className==="one"?"active":background.className}
-                onClick={(e) => {
-                  e.currentTarget.parentElement.parentElement.parentElement.firstChild.firstChild.style.backgroundImage = background.css;
-                  let backgroundChildren = Array.from(
-                    e.currentTarget.parentElement.children
-                  );
-                  backgroundChildren.forEach((backgroundChild) => {
-                    if (backgroundChild.classList.contains("active")) {
-                      backgroundChild.classList.remove("active");
-                    }
-                  });
-                  e.currentTarget.classList.add("active");
-                }}
+                onClick={ (e)=>{backgroundClick(e, background.css)}}
               ></div>
             );
           })}
@@ -61,22 +69,15 @@ function DataAndEditing() {
           <p className="solid-background-color-title">
             Wanna use a Solid Color?
           </p>
-          {/* <input type="text" name="solidColor" id="solid-color" placeholder="Input HEX color code here"  value={solidColor} onChange={
-            (e)=>{
-              setsolidColor(e.currentTarget.value);
-            if(solidColor.length===6){
-              // e.currentTarget.parentElement.parentElement.parentElement.firstChild.firstChild.attribues.remove("backgroundImage");
-              e.currentTarget.parentElement.parentElement.parentElement.firstChild.firstChild.style.backgroundColor = solidColor;
-              console.log(solidColor)
-            }
-            }}/> */}
             <div className="solid-color-input-container">
-                <input type="text" name="solidColor" id="solid-color" placeholder="Input HEX color code here"  value={solidColor} onChange={(e)=>{setsolidColor(e.currentTarget.value)}} />
-                <button onClick={(e)=>{
-                  // e.currentTarget.parentElement.parentElement.parentElement.parentElement.firstChild.firstChild.styles.backgroundImage=' ';
-                  e.currentTarget.parentElement.parentElement.parentElement.parentElement.firstChild.firstChild.style.backgroundColor = solidColor;
-
-                }}>Use</button>
+                <input 
+                type="text"
+                name="solidColor" 
+                id="solid-color"
+                placeholder="Input HEX color code here"
+                value={solidColor} 
+                onChange={(e)=>{setsolidColor(e.currentTarget.value)}} />
+                <button onClick={solidBackgroundHandler}>Use</button>
 
             </div>
         </div>

@@ -1,0 +1,54 @@
+[
+    {
+        "id":1,
+        "className":"one",
+        "css":"font-family: 'Noto Sans', sans-serif"
+    },
+    {
+        "id":2,
+        "className":"two",
+        "css":"font-family: 'Roboto', sans-serif"
+    },
+    {
+        "id":3,
+        "className":"three",
+        "css":"font-family: 'Montserrat', sans-serif"
+    },
+    {
+        "id":4,
+        "className":"four",
+        "css":"font-family: 'Lato', sans-serif"
+    }
+    ,{
+        "id":5,
+        "className":"five",
+        "css":"font-family: 'Poppins', sans-serif"
+    },
+    {
+        "id":6,
+        "className":"six",
+        "css":"font-family: 'Raleway', sans-serif"
+    },
+    {
+        "id":7,
+        "className":"seven",
+        "css":"font-family: 'Ubuntu', sans-serif"
+    }
+    ,
+    {
+        "id":8,
+        "className":"eight",
+        "css":"font-family: 'Nunito', sans-serif"
+    },
+    {
+        "id":9,
+        "className":"nine",
+        "css":"font-family: 'PT Sans', sans-serif"
+    },
+    {
+        "id":10,
+        "className":"ten",
+        "css":"font-family: 'Quicksand', sans-serif"
+    }
+    
+]
