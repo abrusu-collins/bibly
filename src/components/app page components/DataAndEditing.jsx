@@ -132,7 +132,14 @@ const textColorHandler = (e) =>{
           <div className="text-color">
             <p className="text-color-title">Change text Color</p>
             <div className="text-color-input-container">
-            <input type="text" name="text-color" id="text-color" value={textColor} onChange={(e)=>{setTextColor(e.currentTarget.value)}}  />
+            <input 
+            type="text"
+             name="text-color"
+              id="text-color"
+              value={textColor} 
+              onChange={(e)=>{setTextColor(e.currentTarget.value)}}
+              placeholder="Input HEX color code here"
+              />
             <button onClick={textColorHandler}>Use</button>
             </div>
           </div>

@@ -8,18 +8,9 @@ app page
 
 hoiberg
 
-write reusable function and cut down long lines in the event handlers, don't be a dumb boy
 navbar
 faqs
 
-background
--solid
--gradient
--mesh gradients
--pattern
-
-choose your quote and get random background
-get random quote and background
 
 
 more on the fecth loader display and also error handling
@@ -28,7 +19,7 @@ more on the fecth loader display and also error handling
 add confetti after image is downloaded
 https://github.com/Agezao/confetti-js
 
-add the feelings generated verse with chatgpt
+
 
 
 DONE
