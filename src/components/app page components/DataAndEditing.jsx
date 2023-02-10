@@ -45,11 +45,14 @@ function DataAndEditing() {
   }
   
   const toggleItalics = (e) => {
-      setItalics(!isItalic);
-      console.log(isItalic)
+    setItalics(!isItalic);
       isItalic? 
-      e.currentTarget.parentElement.parentElement.firstChild.firstChild.style.fontStyle="italics"
-      :e.currentTarget.parentElement.parentElement.firstChild.firstChild.style.fontStyle="normal"
+            e.currentTarget.parentElement.parentElement.firstChild.firstChild.firstChild.style.fontStyle="normal"
+            :e.currentTarget.parentElement.parentElement.firstChild.firstChild.firstChild.style.fontStyle="italic";
+      isItalic? 
+            e.currentTarget.parentElement.parentElement.firstChild.firstChild.children[1].style.fontStyle="normal"
+            :e.currentTarget.parentElement.parentElement.firstChild.firstChild.children[1].style.fontStyle="italic";
+
   }
 
   function borderRadiusHandler(e, borderRadius){
