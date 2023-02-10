@@ -127,8 +127,11 @@ const textColorHandler = (e) =>{
           </button>
 
           <div className="text-color">
+            <p className="text-color-title">Change text Color</p>
+            <div className="text-color-input-container">
             <input type="text" name="text-color" id="text-color" value={textColor} onChange={(e)=>{setTextColor(e.currentTarget.value)}}  />
             <button onClick={textColorHandler}>Use</button>
+            </div>
           </div>
 
           <div className="border-radius">
