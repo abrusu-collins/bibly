@@ -308,13 +308,28 @@ form button:hover {
 }
 .dataandediting .editing .fonts select {
   width: 99%;
+  border-radius: 5px;
   background-color: #edf3f2;
   border: none;
   padding: 30px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 .dataandediting .editing .fonts select:focus {
   outline: none;
+}
+.dataandediting .editing .italics-button {
+  color: #ffffff;
+  background-color: #f075c6;
+  padding: 18px 50px;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 10px 10px 0px -4px rgb(0, 0, 0);
+  -webkit-box-shadow: 10px 10px 0px -4px rgb(0, 0, 0);
+  -moz-box-shadow: 10px 10px 0px -4px rgb(0, 0, 0);
+  margin-bottom: 40px;
+}
+.dataandediting .editing .italics-button:hover {
+  cursor: pointer;
 }
 .dataandediting .editing .backgrounds {
   display: grid;

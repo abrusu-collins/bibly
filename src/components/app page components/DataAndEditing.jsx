@@ -112,7 +112,7 @@ e.currentTarget.parentElement.parentElement.firstChild.firstChild.style.fontStyl
           </select>
         </div>
 
-          <button onClick={toggleItalics}>
+          <button onClick={toggleItalics} className="italics-button">
             {isItalic?"Use Normal":"Use Italics"}
           </button>
 
