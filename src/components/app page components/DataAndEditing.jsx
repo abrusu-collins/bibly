@@ -47,8 +47,13 @@ function DataAndEditing() {
       setItalics(!isItalic);
       console.log(isItalic)
       isItalic? 
-e.currentTarget.parentElement.parentElement.firstChild.firstChild.style.fontStyle="italics"
+      e.currentTarget.parentElement.parentElement.firstChild.firstChild.style.fontStyle="italics"
       :e.currentTarget.parentElement.parentElement.firstChild.firstChild.style.fontStyle="normal"
+  }
+
+  function changeBorderRaduis(e, borderRadius){
+    e.currentTarget.parentElement.parentElement.parentElement.firstChild.firstChild.style.borderRadius=`${borderRadius}px`;
+    console.log(borderRadius)
   }
 
   return (
@@ -116,6 +121,15 @@ e.currentTarget.parentElement.parentElement.firstChild.firstChild.style.fontStyl
             {isItalic?"Use Normal":"Use Italics"}
           </button>
 
+          <div className="border-radius">
+            <p className="border-radius-title">Change border radius</p>
+            <input 
+            type="number"
+             name="border-radius"
+              id="border-radius" 
+              onChange={(e)=>{changeBorderRaduis(e, e.currentTarget.value)}}
+              />
+          </div>
       </div>
       
     </div>
