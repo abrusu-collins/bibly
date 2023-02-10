@@ -138,6 +138,24 @@
           }
           margin-bottom: 40px;
     }
+
+    & .border-radius{
+      & .border-radius-title{
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 20px;
+      }
+      & input{
+        background-color: $background_color2;
+        width: 98%;
+        padding: 30px;
+        border: none;
+        border-radius: 5px;
+        &:focus{
+          outline: none;
+        }
+      }
+    }
     overflow-y: auto;
     height: 350px;
 

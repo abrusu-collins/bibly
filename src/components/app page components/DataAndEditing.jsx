@@ -127,6 +127,7 @@ function DataAndEditing() {
             type="number"
              name="border-radius"
               id="border-radius" 
+              placeholder="The corners will be more rounded the higher the number"
               onChange={(e)=>{changeBorderRaduis(e, e.currentTarget.value)}}
               />
           </div>

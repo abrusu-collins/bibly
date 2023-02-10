@@ -330,6 +330,21 @@ form button:hover {
 .dataandediting .editing .italics-button:hover {
   cursor: pointer;
 }
+.dataandediting .editing .border-radius .border-radius-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.dataandediting .editing .border-radius input {
+  background-color: #edf3f2;
+  width: 98%;
+  padding: 30px;
+  border: none;
+  border-radius: 5px;
+}
+.dataandediting .editing .border-radius input:focus {
+  outline: none;
+}
 .dataandediting .editing .backgrounds {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
