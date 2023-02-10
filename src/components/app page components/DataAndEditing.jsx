@@ -9,6 +9,7 @@ function DataAndEditing() {
   const verse = useSelector((state) => state.verse.verse);
   const reference = useSelector((state) => state.verse.reference);
   const [solidColor,setsolidColor] = useState("");
+  const [textColor,setTextColor] = useState("");
   const [isItalic,setItalics] = useState(false);
   const domEl = useRef(null);
   const downloadImage = async () => {
@@ -51,11 +52,15 @@ function DataAndEditing() {
       :e.currentTarget.parentElement.parentElement.firstChild.firstChild.style.fontStyle="normal"
   }
 
-  function changeBorderRaduis(e, borderRadius){
+  function borderRadiusHandler(e, borderRadius){
     e.currentTarget.parentElement.parentElement.parentElement.firstChild.firstChild.style.borderRadius=`${borderRadius}px`;
     console.log(borderRadius)
   }
+const textColorHandler = (e) =>{
+  e.currentTarget.parentElement.parentElement.parentElement.firstChild.firstChild.firstChild.style.color=textColor;
+  e.currentTarget.parentElement.parentElement.parentElement.firstChild.firstChild.children[1].style.color=textColor;
 
+}
   return (
     <div className="dataandediting">
       <div className="data">
@@ -121,6 +126,11 @@ function DataAndEditing() {
             {isItalic?"Use Normal":"Use Italics"}
           </button>
 
+          <div className="text-color">
+            <input type="text" name="text-color" id="text-color" value={textColor} onChange={(e)=>{setTextColor(e.currentTarget.value)}}  />
+            <button onClick={textColorHandler}>Use</button>
+          </div>
+
           <div className="border-radius">
             <p className="border-radius-title">Change border radius</p>
             <input 
@@ -128,7 +138,7 @@ function DataAndEditing() {
              name="border-radius"
               id="border-radius" 
               placeholder="The corners will be more rounded the higher the number"
-              onChange={(e)=>{changeBorderRaduis(e, e.currentTarget.value)}}
+              onChange={(e)=>{borderRadiusHandler(e, e.currentTarget.value)}}
               />
           </div>
       </div>

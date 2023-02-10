@@ -21,10 +21,11 @@ $button_shadow: #14181f;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: $text_color;
 }
 body {
   font-family: "Inter", sans-serif;
+  color: $text_color;
+
 }
 span {
   font-weight: 900;
