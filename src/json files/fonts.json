@@ -19,11 +19,7 @@
         "fontName":"Lato",
         "fontFamily":"'Lato', sans-serif"
     }
-    ,{
-        "id":5,
-        "fontName":"Poppins",
-        "fontFamily":"'Poppins', sans-serif"
-    },
+    ,
     {
         "id":6,
         "fontName":"Raleway",

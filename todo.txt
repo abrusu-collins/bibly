@@ -1,6 +1,5 @@
 app page
-2 halves(left  input element for verse: canvas: download and share button,
- right: editing tools(background cats, fonts, borders,text color in hex, resizing))
+
 
 3 ways to get your verse
 1. your own verse
@@ -38,3 +37,5 @@ the website
 https://bible-api.com/
 
 html2canvas for downloading image 
+2 halves(left  input element for verse: canvas: download and share button,
+ right: editing tools(background cats, fonts, borders,text color in hex, ))
