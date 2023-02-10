@@ -57,8 +57,8 @@ function DataAndEditing() {
     console.log(borderRadius)
   }
 const textColorHandler = (e) =>{
-  e.currentTarget.parentElement.parentElement.parentElement.firstChild.firstChild.firstChild.style.color=textColor;
-  e.currentTarget.parentElement.parentElement.parentElement.firstChild.firstChild.children[1].style.color=textColor;
+  e.currentTarget.parentElement.parentElement.parentElement.parentElement.firstChild.firstChild.firstChild.style.color=textColor;
+  e.currentTarget.parentElement.parentElement.parentElement.parentElement.firstChild.firstChild.children[1].style.color=textColor;
 
 }
   return (
