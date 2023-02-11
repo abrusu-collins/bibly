@@ -9,9 +9,10 @@ function DataAndEditing() {
   const verse = useSelector((state) => state.verse.verse);
   const reference = useSelector((state) => state.verse.reference);
   const [solidColor,setsolidColor] = useState("");
-  const [textColor,setTextColor] = useState("");
+  // const [textColor,setTextColor] = useState("");
   const [isItalic,setItalics] = useState(false);
   const [borderRadius,setBorderRadius ]= useState(0);
+  const [textColor,setTextColor]= useState("#fcfeff");
   const domEl = useRef(null);
   const downloadImage = async () => {
     const dataUrl = await htmlToImage.toPng(domEl.current);
@@ -56,21 +57,17 @@ function DataAndEditing() {
 
   }
 
-  // function borderRadiusHandler(e, borderRadius){
-  //   e.currentTarget.parentElement.parentElement.parentElement.firstChild.firstChild.style.borderRadius=`${borderRadius}px`;
-  //   console.log(borderRadius)
-  // }
-const textColorHandler = (e) =>{
-  e.currentTarget.parentElement.parentElement.parentElement.parentElement.firstChild.firstChild.firstChild.style.color=textColor;
-  e.currentTarget.parentElement.parentElement.parentElement.parentElement.firstChild.firstChild.children[1].style.color=textColor;
 
-}
+// const textColorHandler = (e) =>{
+//   e.currentTarget.parentElement.parentElement.parentElement.parentElement.firstChild.firstChild.firstChild.style.color=textColor;
+//   e.currentTarget.parentElement.parentElement.parentElement.parentElement.firstChild.firstChild.children[1].style.color=textColor;
+// }
   return (
     <div className="dataandediting">
       <div className="data">
         <div className="versediv" id="domEl" ref={domEl} style={{ borderRadius:`${borderRadius}px`}}>
-          <p className="verse">{verse}</p>
-          <p className="reference">{reference}</p>
+          <p className="verse"  style={{ color:`${textColor}`}}>{verse}</p>
+          <p className="reference"  style={{ color:`${textColor}`}}>{reference}</p>
         </div>
         <div className="share-and-download">
           <button onClick={downloadImage}>Download Image</button>
@@ -138,10 +135,14 @@ const textColorHandler = (e) =>{
              name="text-color"
               id="text-color"
               value={textColor} 
-              onChange={(e)=>{setTextColor(e.currentTarget.value)}}
+              onChange={(e)=>{
+                // if (e.currentTarget.value.length==2){
+                  setTextColor(e.currentTarget.value)
+                // }
+              }}
               placeholder="Input HEX color code here"
               />
-            <button onClick={textColorHandler}>Use</button>
+            <button onClick={(e)=>{setTextColor(e.currentTarget.value)}}>Use</button>
             </div>
           </div>
 
