@@ -45,23 +45,13 @@ function DataAndEditing() {
 
   }
   
-  const toggleItalics = (e) => {
-    setItalics(!isItalic);
-      isItalic? 
-            e.currentTarget.parentElement.parentElement.firstChild.firstChild.firstChild.style.fontStyle="normal"
-            :e.currentTarget.parentElement.parentElement.firstChild.firstChild.firstChild.style.fontStyle="italic";
-      isItalic? 
-            e.currentTarget.parentElement.parentElement.firstChild.firstChild.children[1].style.fontStyle="normal"
-            :e.currentTarget.parentElement.parentElement.firstChild.firstChild.children[1].style.fontStyle="italic";
-
-  }
 
   return (
     <div className="dataandediting">
       <div className="data">
         <div className="versediv" id="domEl" ref={domEl} style={{ borderRadius:`${borderRadius}px`}}>
-          <p className="verse"  style={{ color:`${textColor}`}}>{verse}</p>
-          <p className="reference"  style={{ color:`${textColor}`}}>{reference}</p>
+          <p className="verse"  style={{ color:`${textColor}`,fontStyle: isItalic? "italic":"normal" }}>{verse}</p>
+          <p className="reference"  style={{ color:`${textColor}`,fontStyle: isItalic? "italic":"normal"}}>{reference}</p>
         </div>
         <div className="share-and-download">
           <button onClick={downloadImage}>Download Image</button>
@@ -117,7 +107,7 @@ function DataAndEditing() {
           </select>
         </div>
 
-          <button onClick={toggleItalics} className="italics-button">
+          <button onClick={(e)=>{setItalics(!isItalic)}} className="italics-button">
             {isItalic?"Use Normal":"Use Italics"}
           </button>
 
