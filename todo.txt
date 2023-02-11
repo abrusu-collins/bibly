@@ -11,7 +11,7 @@ hoiberg
 navbar
 faqs
 
-
+add google analytics
 
 more on the fecth loader display and also error handling
 NPprogress and chakra toast
