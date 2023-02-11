@@ -9,7 +9,6 @@ function DataAndEditing() {
   const verse = useSelector((state) => state.verse.verse);
   const reference = useSelector((state) => state.verse.reference);
   const [solidColor,setsolidColor] = useState("");
-  // const [textColor,setTextColor] = useState("");
   const [isItalic,setItalics] = useState(false);
   const [borderRadius,setBorderRadius ]= useState(0);
   const [textColor,setTextColor]= useState("#fcfeff");
@@ -57,11 +56,6 @@ function DataAndEditing() {
 
   }
 
-
-// const textColorHandler = (e) =>{
-//   e.currentTarget.parentElement.parentElement.parentElement.parentElement.firstChild.firstChild.firstChild.style.color=textColor;
-//   e.currentTarget.parentElement.parentElement.parentElement.parentElement.firstChild.firstChild.children[1].style.color=textColor;
-// }
   return (
     <div className="dataandediting">
       <div className="data">
@@ -142,7 +136,6 @@ function DataAndEditing() {
               }}
               placeholder="Input HEX color code here"
               />
-            <button onClick={(e)=>{setTextColor(e.currentTarget.value)}}>Use</button>
             </div>
           </div>
 
