@@ -8,6 +8,7 @@ import fonts from "../../json files/fonts.json";
 function DataAndEditing() {
   const verse = useSelector((state) => state.verse.verse);
   const reference = useSelector((state) => state.verse.reference);
+  const [gradientBackground,setGradientBackground] = useState("");
   const [solidColor,setsolidColor] = useState("");
   const [isItalic,setItalics] = useState(false);
   const [fontFamily,setFontFamily]= useState(" ");
@@ -22,8 +23,8 @@ function DataAndEditing() {
     link.click();
   };
 
-  function backgroundClick (e, backgroundCss ){
-    e.currentTarget.parentElement.parentElement.parentElement.firstChild.firstChild.style.backgroundImage = backgroundCss;
+  const  backgroundClick = (e)=>{
+    setGradientBackground(e.currentTarget.style.background);
     let backgroundChildren = Array.from(
       e.currentTarget.parentElement.children
     );
@@ -45,7 +46,7 @@ function DataAndEditing() {
   return (
     <div className="dataandediting">
       <div className="data">
-        <div className="versediv" id="domEl" ref={domEl} style={{ borderRadius:`${borderRadius}px`,fontFamily:fontFamily}}>
+        <div className="versediv" id="domEl" ref={domEl} style={{ borderRadius:`${borderRadius}px`,fontFamily:fontFamily, background:gradientBackground}}>
           <p className="verse"  style={{ color:`${textColor}`,fontStyle: isItalic? "italic":"normal" }}>{verse}</p>
           <p className="reference"  style={{ color:`${textColor}`,fontStyle: isItalic? "italic":"normal"}}>{reference}</p>
         </div>
@@ -64,9 +65,9 @@ function DataAndEditing() {
             return (
               <div
                 key={background.id}
-                style={{ backgroundImage: background.css }}
+                style={{ background: background.css }}
                 className={background.className==="one"?"active":background.className}
-                onClick={ (e)=>{backgroundClick(e, background.css)}}
+                onClick={backgroundClick}
               ></div>
             );
           })}
