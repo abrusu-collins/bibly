@@ -10,6 +10,7 @@ function DataAndEditing() {
   const reference = useSelector((state) => state.verse.reference);
   const [solidColor,setsolidColor] = useState("");
   const [isItalic,setItalics] = useState(false);
+  const [fontFamily,setFontFamily]= useState(" ");
   const [borderRadius,setBorderRadius ]= useState(0);
   const [textColor,setTextColor]= useState("#fcfeff");
   const domEl = useRef(null);
@@ -39,17 +40,12 @@ function DataAndEditing() {
     e.currentTarget.parentElement.parentElement.parentElement.parentElement.firstChild.firstChild.style.backgroundColor = solidColor;
 
   }
-
-  function fontHandler(e,fontCss){
-    e.currentTarget.parentElement.parentElement.parentElement.firstChild.firstChild.style.fontFamily = fontCss;
-
-  }
-  
+ 
 
   return (
     <div className="dataandediting">
       <div className="data">
-        <div className="versediv" id="domEl" ref={domEl} style={{ borderRadius:`${borderRadius}px`}}>
+        <div className="versediv" id="domEl" ref={domEl} style={{ borderRadius:`${borderRadius}px`,fontFamily:fontFamily}}>
           <p className="verse"  style={{ color:`${textColor}`,fontStyle: isItalic? "italic":"normal" }}>{verse}</p>
           <p className="reference"  style={{ color:`${textColor}`,fontStyle: isItalic? "italic":"normal"}}>{reference}</p>
         </div>
@@ -96,7 +92,7 @@ function DataAndEditing() {
         <div className="fonts">
           <p className="fonts-title">Choose your font</p>
           <select name="fonts" id="fonts"
-          onChange={(e)=>{fontHandler(e, e.currentTarget.value)}}>
+          onChange={(e)=>{setFontFamily(e.currentTarget.value)}}>
           {fonts.map((font)=>{
            return <option 
            key={font.id}
