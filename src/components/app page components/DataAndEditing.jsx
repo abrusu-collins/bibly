@@ -134,11 +134,11 @@ function DataAndEditing() {
             type="text"
              name="text-color"
               id="text-color"
-              value={textColor} 
               onChange={(e)=>{
-                // if (e.currentTarget.value.length==2){
+                if (e.currentTarget.value.length===7){
+                  console.log("eii")
                   setTextColor(e.currentTarget.value)
-                // }
+                }
               }}
               placeholder="Input HEX color code here"
               />
