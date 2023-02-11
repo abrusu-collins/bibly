@@ -11,6 +11,7 @@ function DataAndEditing() {
   const [solidColor,setsolidColor] = useState("");
   const [textColor,setTextColor] = useState("");
   const [isItalic,setItalics] = useState(false);
+  const [borderRadius,setBorderRadius ]= useState(0);
   const domEl = useRef(null);
   const downloadImage = async () => {
     const dataUrl = await htmlToImage.toPng(domEl.current);
@@ -55,10 +56,10 @@ function DataAndEditing() {
 
   }
 
-  function borderRadiusHandler(e, borderRadius){
-    e.currentTarget.parentElement.parentElement.parentElement.firstChild.firstChild.style.borderRadius=`${borderRadius}px`;
-    console.log(borderRadius)
-  }
+  // function borderRadiusHandler(e, borderRadius){
+  //   e.currentTarget.parentElement.parentElement.parentElement.firstChild.firstChild.style.borderRadius=`${borderRadius}px`;
+  //   console.log(borderRadius)
+  // }
 const textColorHandler = (e) =>{
   e.currentTarget.parentElement.parentElement.parentElement.parentElement.firstChild.firstChild.firstChild.style.color=textColor;
   e.currentTarget.parentElement.parentElement.parentElement.parentElement.firstChild.firstChild.children[1].style.color=textColor;
@@ -67,7 +68,7 @@ const textColorHandler = (e) =>{
   return (
     <div className="dataandediting">
       <div className="data">
-        <div className="versediv" id="domEl" ref={domEl}>
+        <div className="versediv" id="domEl" ref={domEl} style={{ borderRadius:`${borderRadius}px`}}>
           <p className="verse">{verse}</p>
           <p className="reference">{reference}</p>
         </div>
@@ -149,9 +150,10 @@ const textColorHandler = (e) =>{
             <input 
             type="number"
              name="border-radius"
+             value={borderRadius}
               id="border-radius" 
               placeholder="The corners will be more rounded the higher the number"
-              onChange={(e)=>{borderRadiusHandler(e, e.currentTarget.value)}}
+              onChange={(e)=>{setBorderRadius(e.currentTarget.value)}}
               />
           </div>
       </div>
