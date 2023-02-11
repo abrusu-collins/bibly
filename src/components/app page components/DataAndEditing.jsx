@@ -123,20 +123,16 @@ function DataAndEditing() {
 
           <div className="text-color">
             <p className="text-color-title">Change text Color</p>
-            <div className="text-color-input-container">
             <input 
             type="text"
              name="text-color"
               id="text-color"
               onChange={(e)=>{
-                if (e.currentTarget.value.length===7){
-                  console.log("eii")
-                  setTextColor(e.currentTarget.value)
-                }
+                e.currentTarget.value.length===7?setTextColor(e.currentTarget.value):setTextColor("#fcfeff");
               }}
               placeholder="Input HEX color code here"
               />
-            </div>
+            
           </div>
 
           <div className="border-radius">

@@ -334,39 +334,17 @@ form button:hover {
   font-weight: 600;
   margin-bottom: 20px;
 }
-.dataandediting .editing .text-color .text-color-input-container {
+.dataandediting .editing .text-color input {
   background-color: #edf3f2;
+  width: 98%;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
   margin-bottom: 40px;
-  background-color: #edf3f2;
-  width: 99%;
-  padding: 15px;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 30px;
 }
-.dataandediting .editing .text-color .text-color-input-container input {
-  background-color: #edf3f2;
-  width: 75%;
-  padding: 15px;
-  border: none;
-  border-radius: 5px;
-}
-.dataandediting .editing .text-color .text-color-input-container input:focus {
+.dataandediting .editing .text-color input:focus {
   outline: none;
-}
-.dataandediting .editing .text-color .text-color-input-container button {
-  color: #ffffff;
-  background-color: #f075c6;
-  padding: 18px 50px;
-  border-radius: 30px;
-  border: none;
-  box-shadow: 10px 10px 0px -4px rgb(0, 0, 0);
-  -webkit-box-shadow: 10px 10px 0px -4px rgb(0, 0, 0);
-  -moz-box-shadow: 10px 10px 0px -4px rgb(0, 0, 0);
-}
-.dataandediting .editing .text-color .text-color-input-container button:hover {
-  cursor: pointer;
 }
 .dataandediting .editing .border-radius .border-radius-title {
   font-size: 20px;
