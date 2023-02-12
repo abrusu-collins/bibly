@@ -71,6 +71,7 @@ function DataAndEditing() {
             Wanna use a solid color background?
           </p>
                 <input 
+                className="input"
                 type="text"
                 name="solidColor" 
                 id="solid-color"

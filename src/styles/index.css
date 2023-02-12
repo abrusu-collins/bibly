@@ -265,39 +265,16 @@ form button:hover {
   font-weight: 600;
   margin-bottom: 20px;
 }
-.dataandediting .editing .solid-background .solid-color-input-container {
+.dataandediting .editing .solid-background .input {
   background-color: #edf3f2;
+  width: 98%;
+  padding: 30px;
+  border: none;
+  border-radius: 5px;
   margin-bottom: 40px;
-  background-color: #edf3f2;
-  width: 99%;
-  padding: 15px;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
-.dataandediting .editing .solid-background .solid-color-input-container input {
-  background-color: #edf3f2;
-  width: 75%;
-  padding: 15px;
-  border: none;
-  border-radius: 5px;
-}
-.dataandediting .editing .solid-background .solid-color-input-container input:focus {
+.dataandediting .editing .solid-background .input:focus {
   outline: none;
-}
-.dataandediting .editing .solid-background .solid-color-input-container button {
-  color: #ffffff;
-  background-color: #f075c6;
-  padding: 18px 50px;
-  border-radius: 30px;
-  border: none;
-  box-shadow: 10px 10px 0px -4px rgb(0, 0, 0);
-  -webkit-box-shadow: 10px 10px 0px -4px rgb(0, 0, 0);
-  -moz-box-shadow: 10px 10px 0px -4px rgb(0, 0, 0);
-}
-.dataandediting .editing .solid-background .solid-color-input-container button:hover {
-  cursor: pointer;
 }
 .dataandediting .editing .fonts .fonts-title {
   font-size: 20px;

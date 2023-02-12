@@ -70,12 +70,13 @@
         font-weight: 600;
         margin-bottom: 20px;
       }
-        & input{
+        & .input{
           background-color: $background_color2;
           width: 98%;
           padding: 30px;
           border: none;
           border-radius: 5px;
+          margin-bottom: 40px;
           &:focus{
             outline: none;
           }
