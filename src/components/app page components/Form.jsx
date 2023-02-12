@@ -4,13 +4,28 @@ import {changeVerse,changeReference} from "../../features/verse/verseSlice";
 
 function Form() {
     const [userinputs,setuserinputs] = useState({book:"",chapter:"",verse:""});
-const [isSelfVerse,setIsSelfVerse] = useState(false);
-const [isTopicVerse,setIsTopicVerse] = useState(true);
-const [isDiscoverVerse,setIsDiscoverVerse] = useState(false);
+    const [isSelfVerse,setIsSelfVerse] = useState(true);
+    const [isTopicVerse,setIsTopicVerse] = useState(false);
+    const [isDiscoverVerse,setIsDiscoverVerse] = useState(false);
 
 
 
-    const dispach = useDispatch()
+    const dispach = useDispatch();
+    const activateSelfVerse = (e)=>{
+        setIsSelfVerse(true)
+        setIsTopicVerse(false);
+        setIsDiscoverVerse(false);
+    }
+    const activateTopicVerse = (e)=>{
+        setIsSelfVerse(false)
+        setIsTopicVerse(true);
+        setIsDiscoverVerse(false);
+    }
+    const activateDiscoverVerse = (e)=>{
+        setIsSelfVerse(false)
+        setIsTopicVerse(false);
+        setIsDiscoverVerse(true);
+    }
     const generate = (e)=>{
         e.preventDefault();
         if(isSelfVerse){
@@ -24,16 +39,14 @@ const [isDiscoverVerse,setIsDiscoverVerse] = useState(false);
         else{
             
         }
-
-
     }
     return ( <>
 
 <div className="toggle-input-category">
         <div className="input-categories">
-            <button>Your own verse reference</button>
-            <button>Verse based on a topic</button>
-            <button>Discover random verse</button>
+            <button onClick={activateSelfVerse}>Your own verse reference</button>
+            <button onClick={activateTopicVerse}>Verse based on a topic</button>
+            <button onClick={activateDiscoverVerse}>Discover random verse</button>
         </div>
       </div>
     {isSelfVerse && <form  className="self-verse">
@@ -75,6 +88,7 @@ const [isDiscoverVerse,setIsDiscoverVerse] = useState(false);
         <p className="discover-title">
             Just click on the "Discover verse" button below to generate a random verse
         </p>
+        <button>Discover Verse</button>
         </form>}
 
     </> );
