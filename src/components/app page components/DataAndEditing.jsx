@@ -43,9 +43,8 @@ function DataAndEditing() {
           <p className="verse"  style={{ color:`${textColor}`,fontStyle: isItalic? "italic":"normal" }}>{verse}</p>
           <p className="reference"  style={{ color:`${textColor}`,fontStyle: isItalic? "italic":"normal"}}>{reference}</p>
         </div>
-        <div className="share-and-download">
+        <div className="download">
           <button onClick={downloadImage}>Download Image</button>
-          <button>Share Image</button>
         </div>
       </div>
 

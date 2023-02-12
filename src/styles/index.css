@@ -225,12 +225,11 @@ form button:hover {
 .dataandediting .data p {
   color: white;
 }
-.dataandediting .data .share-and-download {
-  display: flex;
-  justify-content: space-evenly;
+.dataandediting .data .download {
+  text-align: center;
   margin-top: 30px;
 }
-.dataandediting .data .share-and-download button {
+.dataandediting .data .download button {
   color: #ffffff;
   background-color: #f075c6;
   padding: 18px 32.5px;
@@ -240,7 +239,7 @@ form button:hover {
   -webkit-box-shadow: 10px 10px 0px -4px rgb(0, 0, 0);
   -moz-box-shadow: 10px 10px 0px -4px rgb(0, 0, 0);
 }
-.dataandediting .data .share-and-download button:hover {
+.dataandediting .data .download button:hover {
   cursor: pointer;
 }
 .dataandediting .editing {
