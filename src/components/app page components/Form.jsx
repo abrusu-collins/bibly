@@ -60,6 +60,7 @@ function Form() {
             <button onClick={activateDiscoverVerse}>Discover random verse</button>
         </div>
       </div>
+      
     {isSelfVerse && <form  className="self-verse">
         <input 
         type="text"
@@ -95,6 +96,8 @@ function Form() {
         <input type="text" name="" id="" />
         <button type="submit" onClick={generate}> Generate verse</button>
         </form>}
+
+
     {isDiscoverVerse && <form className="discover-verse">
         <p className="discover-title">
             Just click on the "Discover verse" button below to generate a random verse
