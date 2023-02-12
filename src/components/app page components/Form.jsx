@@ -46,7 +46,9 @@ function Form() {
             //end with :
             openai.createCompletion({
                 model: "text-davinci-003",
-                prompt: `give me a bible verse reference that teaches on the topic ${topic}. The refrence should be in this form ("mattew 2:22" or "mattew 5:27-28"), please don't add anything to it, just give me the reference`,
+                prompt: `give me a bible verse reference that teaches on the topic ${topic}.
+                The refrence should be in this form ("mattew 2:22" or "mattew 5:27-28"), 
+                please don't add anything to it, just give me the reference`,
                 temperature: 1,
                 max_tokens: 7,
               })
@@ -60,7 +62,26 @@ function Form() {
 
         }
         else{
-            
+            //end with -
+            //end with string
+            //end with :
+            openai.createCompletion({
+                model: "text-davinci-003",
+                prompt: `give me a random bible verse reference.
+                The refrence should be in this form "mattew 2:22", 
+                please don't add anything to it, just give me the reference
+                and also never give me "John 3:16"
+                `,
+                temperature: 1,
+                max_tokens: 7,
+              })
+              .then((res)=>{return res})
+              .then((data)=>{
+                fetch(`https://bible-api.com/${data.data.choices[0].text}`)
+                .then((response)=>{return response.json()})
+                .then((data)=>{console.log(data.text);dispach(changeVerse(data));dispach(changeReference(data))})
+                
+                console.log(data.data.choices[0].text);});
         }
     }
     return ( <>
