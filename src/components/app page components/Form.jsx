@@ -2,6 +2,12 @@ import { useState } from "react";
 import { useDispatch } from "react-redux";
 import {changeVerse,changeReference} from "../../features/verse/verseSlice";
 
+import { Configuration, OpenAIApi }  from "openai";
+const configuration = new Configuration({
+  apiKey: process.env.REACT_APP_OPENAI_API_KEY,
+});
+const openai = new OpenAIApi(configuration);
+
 function Form() {
     const [userinputs,setuserinputs] = useState({book:"",chapter:"",verse:""});
     const [isSelfVerse,setIsSelfVerse] = useState(true);
@@ -34,7 +40,12 @@ function Form() {
             .then((data)=>{console.log(data.text);dispach(changeVerse(data));dispach(changeReference(data))})
         }
         else if(isTopicVerse){
-
+            openai.createCompletion({
+                model: "text-davinci-003",
+                prompt: "Say this is a test",
+                temperature: 0,
+                max_tokens: 7,
+              }).then((res)=>{return res}).then((data)=>{console.log(data);});
         }
         else{
             
@@ -82,13 +93,13 @@ function Form() {
 
     {isTopicVerse && <form className="topic-verse">
         <input type="text" name="" id="" />
-        <button>Generate verse</button>
+        <button type="submit" onClick={generate}> Generate verse</button>
         </form>}
     {isDiscoverVerse && <form className="discover-verse">
         <p className="discover-title">
             Just click on the "Discover verse" button below to generate a random verse
         </p>
-        <button>Discover Verse</button>
+        <button type="submit" onClick={generate}>Discover Verse</button>
         </form>}
 
     </> );
