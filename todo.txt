@@ -11,6 +11,8 @@ hoiberg
 navbar
 faqs
 
+
+add sharing later
 add google analytics
 
 more on the fecth loader display and also error handling

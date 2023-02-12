@@ -1,0 +1,351 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #484d51;
+}
+
+span {
+  font-weight: 900;
+}
+
+.active {
+  border: 5px solid #f075c6;
+}
+
+.inactive {
+  border: none;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1.7fr;
+  width: 80%;
+  grid-gap: 2rem;
+  align-items: center;
+  margin: 200px auto 200px auto;
+}
+.hero .hero-text .hero-header {
+  font-size: 50px;
+  font-weight: 900;
+  -webkit-text-decoration: underline wavy #f075c6;
+          text-decoration: underline wavy #f075c6;
+  font-family: "Aclonica", sans-serif;
+}
+.hero .hero-text .hero-description {
+  margin: 30px auto 35px auto;
+}
+.hero a {
+  color: #ffffff;
+  background-color: #f075c6;
+  text-decoration: none;
+  padding: 18px 32.5px;
+  border-radius: 30px;
+  box-shadow: 10px 10px 0px -4px rgb(0, 0, 0);
+  -webkit-box-shadow: 10px 10px 0px -4px rgb(0, 0, 0);
+  -moz-box-shadow: 10px 10px 0px -4px rgb(0, 0, 0);
+  display: inline-block;
+}
+
+.hero img {
+  width: 100%;
+}
+
+.marquee {
+  background-color: #edf3f2;
+  background-image: url("../imgs/marquee-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding: 90px 0;
+}
+.marquee .header {
+  font-size: 50px;
+  font-weight: 900;
+  text-align: center;
+  font-family: "Aclonica", sans-serif;
+}
+.marquee .text {
+  text-align: center;
+  padding: 20px 0 50px 0;
+}
+.marquee .top {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  width: 65%;
+  margin: auto;
+  padding-top: 30px;
+}
+.marquee img {
+  width: 100%;
+}
+
+.steps {
+  padding: 100px 0;
+}
+.steps .img1 {
+  text-align: right;
+}
+.steps .header {
+  font-size: 50px;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: "Aclonica", sans-serif;
+}
+.steps .steps-div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  width: 80%;
+  margin: auto;
+}
+.steps .steps-div .step1 {
+  background-color: #edf3f2;
+  padding: 90px 45px;
+  border-radius: 15px;
+}
+.steps .steps-div .step1 .step-header {
+  font-weight: 700;
+  font-size: 25px;
+  margin-bottom: 15px;
+  font-family: "Aclonica", sans-serif;
+}
+.steps .steps-div .step1 .number {
+  position: absolute;
+  text-align: center;
+  font-size: 150px;
+  color: #e1e4e7;
+  z-index: 0;
+}
+.steps .steps-div .step1 .step-description {
+  position: relative;
+  z-index: 1;
+}
+
+.share {
+  margin-bottom: 100px;
+}
+.share .header {
+  font-size: 50px;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: "Aclonica", sans-serif;
+}
+.share .socials {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 30%;
+  margin: auto;
+}
+.share img {
+  width: 60%;
+}
+.share img:hover {
+  filter: grayscale(100%);
+}
+
+footer {
+  margin: 150px 0 50px 0;
+  text-align: center;
+}
+
+form {
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto 40px auto;
+  width: 40%;
+}
+form input {
+  margin-bottom: 15px;
+  background-color: #edf3f2;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+}
+form button {
+  color: #ffffff;
+  background-color: #f075c6;
+  padding: 18px 32.5px;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 10px 10px 0px -4px rgb(0, 0, 0);
+  -webkit-box-shadow: 10px 10px 0px -4px rgb(0, 0, 0);
+  -moz-box-shadow: 10px 10px 0px -4px rgb(0, 0, 0);
+}
+form button:hover {
+  cursor: pointer;
+}
+
+.dataandediting {
+  padding-top: 80px;
+  border-top: 2px dashed rgb(177, 176, 176);
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  grid-gap: 5rem;
+  width: 85%;
+  margin: 80px auto;
+}
+.dataandediting .data .versediv {
+  height: 200px;
+  width: 500px;
+  background: linear-gradient(45deg, rgb(252, 169, 90), rgb(162, 85, 124), rgb(71, 0, 157));
+  padding: 50px;
+  text-align: center;
+}
+.dataandediting .data .versediv .verse {
+  text-align: left;
+  margin-bottom: 25px;
+}
+.dataandediting .data .versediv .reference {
+  text-align: right;
+  font-weight: 900;
+}
+.dataandediting .data p {
+  color: white;
+}
+.dataandediting .data .share-and-download {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+.dataandediting .data .share-and-download button {
+  color: #ffffff;
+  background-color: #f075c6;
+  padding: 18px 32.5px;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 10px 10px 0px -4px rgb(0, 0, 0);
+  -webkit-box-shadow: 10px 10px 0px -4px rgb(0, 0, 0);
+  -moz-box-shadow: 10px 10px 0px -4px rgb(0, 0, 0);
+}
+.dataandediting .data .share-and-download button:hover {
+  cursor: pointer;
+}
+.dataandediting .editing {
+  overflow-y: auto;
+  height: 350px;
+}
+.dataandediting .editing .edit-header {
+  font-size: 30px;
+  font-weight: 900;
+  margin-bottom: 40px;
+}
+.dataandediting .editing .backgrounds-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.dataandediting .editing .backgrounds {
+  margin-bottom: 40px;
+}
+.dataandediting .editing .solid-background .solid-background-color-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.dataandediting .editing .solid-background input {
+  background-color: #edf3f2;
+  width: 98%;
+  padding: 30px;
+  border: none;
+  border-radius: 5px;
+}
+.dataandediting .editing .solid-background input:focus {
+  outline: none;
+}
+.dataandediting .editing .fonts .fonts-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.dataandediting .editing .fonts select {
+  width: 99%;
+  border-radius: 5px;
+  background-color: #edf3f2;
+  border: none;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+.dataandediting .editing .fonts select:focus {
+  outline: none;
+}
+.dataandediting .editing .italics-button {
+  color: #ffffff;
+  background-color: #f075c6;
+  padding: 18px 50px;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 10px 10px 0px -4px rgb(0, 0, 0);
+  -webkit-box-shadow: 10px 10px 0px -4px rgb(0, 0, 0);
+  -moz-box-shadow: 10px 10px 0px -4px rgb(0, 0, 0);
+  margin-bottom: 40px;
+}
+.dataandediting .editing .italics-button:hover {
+  cursor: pointer;
+}
+.dataandediting .editing .text-color .text-color-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.dataandediting .editing .text-color input {
+  background-color: #edf3f2;
+  width: 98%;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 40px;
+  padding: 30px;
+}
+.dataandediting .editing .text-color input:focus {
+  outline: none;
+}
+.dataandediting .editing .border-radius .border-radius-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.dataandediting .editing .border-radius input {
+  background-color: #edf3f2;
+  width: 98%;
+  padding: 30px;
+  border: none;
+  border-radius: 5px;
+}
+.dataandediting .editing .border-radius input:focus {
+  outline: none;
+}
+.dataandediting .editing .backgrounds {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+}
+.dataandediting .editing .backgrounds div {
+  padding: 40px;
+  border-radius: 5px;
+}
+.dataandediting .editing .backgrounds div:hover {
+  cursor: pointer;
+}/*# sourceMappingURL=index.css.map */

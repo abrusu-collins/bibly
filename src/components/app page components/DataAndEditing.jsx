@@ -70,16 +70,13 @@ function DataAndEditing() {
           <p className="solid-background-color-title">
             Wanna use a solid color background?
           </p>
-            <div className="solid-color-input-container">
                 <input 
                 type="text"
                 name="solidColor" 
                 id="solid-color"
                 placeholder="Input HEX color code here"
-                onChange={(e)=>{e.currentTarget.value.length===7?setBackground(e.currentTarget.value):console.log("object")}}
+                onChange={(e)=>{e.currentTarget.value.length===7?setBackground(e.currentTarget.value):console.log("")}}
                  />
-
-            </div>
         </div>
 
         <div className="fonts">
