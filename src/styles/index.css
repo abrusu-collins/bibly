@@ -167,7 +167,7 @@ footer {
   text-align: center;
 }
 
-form {
+.self-verse {
   font-size: 10px;
   display: flex;
   flex-direction: column;
@@ -176,7 +176,7 @@ form {
   margin: 50px auto 40px auto;
   width: 40%;
 }
-form input {
+.self-verse input {
   margin-bottom: 15px;
   background-color: #edf3f2;
   width: 100%;
@@ -184,7 +184,7 @@ form input {
   border: none;
   border-radius: 5px;
 }
-form button {
+.self-verse button {
   color: #ffffff;
   background-color: #f075c6;
   padding: 18px 32.5px;
@@ -194,7 +194,7 @@ form button {
   -webkit-box-shadow: 10px 10px 0px -4px rgb(0, 0, 0);
   -moz-box-shadow: 10px 10px 0px -4px rgb(0, 0, 0);
 }
-form button:hover {
+.self-verse button:hover {
   cursor: pointer;
 }
 

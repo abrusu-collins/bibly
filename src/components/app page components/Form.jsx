@@ -5,7 +5,7 @@ import {changeVerse,changeReference} from "../../features/verse/verseSlice";
 function Form() {
     const [userinputs,setuserinputs] = useState({book:"",chapter:"",verse:""});
 const [isSelfVerse,setIsSelfVerse] = useState(false);
-const [isTopicVerse,setIsTopicVerse] = useState(false);
+const [isTopicVerse,setIsTopicVerse] = useState(true);
 const [isDiscoverVerse,setIsDiscoverVerse] = useState(false);
 
 
@@ -36,7 +36,7 @@ const [isDiscoverVerse,setIsDiscoverVerse] = useState(false);
             <button>Discover random verse</button>
         </div>
       </div>
-    {isSelfVerse && <form >
+    {isSelfVerse && <form  className="self-verse">
         <input 
         type="text"
         name="book" 
@@ -64,8 +64,19 @@ const [isDiscoverVerse,setIsDiscoverVerse] = useState(false);
         <button type="submit" onClick={generate}>Generate verse</button>
         <br />
 
-
     </form>}
+
+
+    {isTopicVerse && <form className="topic-verse">
+        <input type="text" name="" id="" />
+        <button>Generate verse</button>
+        </form>}
+    {isDiscoverVerse && <form className="discover-verse">
+        <p className="discover-title">
+            Just click on the "Discover verse" button below to generate a random verse
+        </p>
+        </form>}
+
     </> );
 }
 
