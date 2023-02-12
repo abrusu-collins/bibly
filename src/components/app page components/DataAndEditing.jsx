@@ -8,8 +8,7 @@ import fonts from "../../json files/fonts.json";
 function DataAndEditing() {
   const verse = useSelector((state) => state.verse.verse);
   const reference = useSelector((state) => state.verse.reference);
-  const [gradientBackground,setGradientBackground] = useState("");
-  const [solidColor,setsolidColor] = useState("");
+  const [background,setBackground] = useState("");
   const [isItalic,setItalics] = useState(false);
   const [fontFamily,setFontFamily]= useState(" ");
   const [borderRadius,setBorderRadius ]= useState(0);
@@ -24,7 +23,7 @@ function DataAndEditing() {
   };
 
   const  backgroundClick = (e)=>{
-    setGradientBackground(e.currentTarget.style.background);
+    setBackground(e.currentTarget.style.background);
     let backgroundChildren = Array.from(
       e.currentTarget.parentElement.children
     );
@@ -36,17 +35,11 @@ function DataAndEditing() {
     e.currentTarget.classList.add("active");
   }
 
-  const solidBackgroundHandler = (e)=>{
-    // e.currentTarget.parentElement.parentElement.parentElement.parentElement.firstChild.firstChild.styles.backgroundImage=' ';
-    e.currentTarget.parentElement.parentElement.parentElement.parentElement.firstChild.firstChild.style.backgroundColor = solidColor;
-
-  }
- 
 
   return (
     <div className="dataandediting">
       <div className="data">
-        <div className="versediv" id="domEl" ref={domEl} style={{ borderRadius:`${borderRadius}px`,fontFamily:fontFamily, background:gradientBackground}}>
+        <div className="versediv" id="domEl" ref={domEl} style={{ borderRadius:`${borderRadius}px`,fontFamily:fontFamily, background:background}}>
           <p className="verse"  style={{ color:`${textColor}`,fontStyle: isItalic? "italic":"normal" }}>{verse}</p>
           <p className="reference"  style={{ color:`${textColor}`,fontStyle: isItalic? "italic":"normal"}}>{reference}</p>
         </div>
@@ -75,7 +68,7 @@ function DataAndEditing() {
 
         <div className="solid-background">
           <p className="solid-background-color-title">
-            Wanna use a Solid Color?
+            Wanna use a solid color background?
           </p>
             <div className="solid-color-input-container">
                 <input 
@@ -83,9 +76,8 @@ function DataAndEditing() {
                 name="solidColor" 
                 id="solid-color"
                 placeholder="Input HEX color code here"
-                value={solidColor} 
-                onChange={(e)=>{setsolidColor(e.currentTarget.value)}} />
-                <button onClick={solidBackgroundHandler}>Use</button>
+                onChange={(e)=>{e.currentTarget.value.length===7?setBackground(e.currentTarget.value):console.log("object")}}
+                 />
 
             </div>
         </div>
