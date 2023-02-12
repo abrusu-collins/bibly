@@ -4,18 +4,39 @@ import {changeVerse,changeReference} from "../../features/verse/verseSlice";
 
 function Form() {
     const [userinputs,setuserinputs] = useState({book:"",chapter:"",verse:""});
+const [isSelfVerse,setIsSelfVerse] = useState(false);
+const [isTopicVerse,setIsTopicVerse] = useState(false);
+const [isDiscoverVerse,setIsDiscoverVerse] = useState(false);
+
 
 
     const dispach = useDispatch()
     const generate = (e)=>{
         e.preventDefault();
-        fetch(`https://bible-api.com/${userinputs.book}%20${userinputs.chapter}:${userinputs.verse}`)
-        .then((response)=>{return response.json()})
-        .then((data)=>{console.log(data.text);dispach(changeVerse(data));dispach(changeReference(data))})
+        if(isSelfVerse){
+            fetch(`https://bible-api.com/${userinputs.book}%20${userinputs.chapter}:${userinputs.verse}`)
+            .then((response)=>{return response.json()})
+            .then((data)=>{console.log(data.text);dispach(changeVerse(data));dispach(changeReference(data))})
+        }
+        else if(isTopicVerse){
+
+        }
+        else{
+            
+        }
+
 
     }
     return ( <>
-    <form >
+
+<div className="toggle-input-category">
+        <div className="input-categories">
+            <button>Your own verse reference</button>
+            <button>Verse based on a topic</button>
+            <button>Discover random verse</button>
+        </div>
+      </div>
+    {isSelfVerse && <form >
         <input 
         type="text"
         name="book" 
@@ -44,7 +65,7 @@ function Form() {
         <br />
 
 
-    </form>
+    </form>}
     </> );
 }
 
