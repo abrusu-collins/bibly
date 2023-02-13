@@ -82,6 +82,7 @@ function Form() {
                     dispach(changeReference("Try again"));
                 })
                 }
+                 //chatGPT response ends with -
                 else if(verseArray[verseArray.length-1]==='-'){
                     let missingNumber = parseInt(verseArray[verseArray.length-2])+1;
                     verseArray.push(missingNumber);
@@ -95,6 +96,10 @@ function Form() {
                         dispach(changeVerse("An error occurred"));
                         dispach(changeReference("Try again"));
                     })
+                }
+                else if(verseArray.includes(".")){
+                    dispach(changeVerse("An error occurred"));
+                    dispach(changeReference("Try again"));
                 }
                  //chatGPT gives a perfect response
                 else{
