@@ -43,23 +43,41 @@ function Form() {
         else if(isTopicVerse){
             //end with -
             //end with string
-            //end with :
+            //end with : or doesn't contain :
             openai.createCompletion({
                 model: "text-davinci-003",
-                prompt: `give me a bible verse reference that teaches on the topic ${topic}.
-                The refrence should be in this form ("mattew 2:22" or "mattew 5:27-28"), 
+                prompt: `give me a bible verse reference that teaches on the topic (${topic}).
+                The refrence should be in this form ("mattew 2:22" or "mattew 5:27-28"),
+                never ever let your answer end with : or -
                 please don't add anything to it, just give me the reference`,
                 temperature: 1,
                 max_tokens: 7,
               })
               .then((res)=>{return res})
               .then((data)=>{
-                fetch(`https://bible-api.com/${data.data.choices[0].text}`)
+                const verseResponse = data.data.choices[0].text;
+                const verseArray = verseResponse.split("");
+                //chatGPT response ends with :
+                if(verseArray[verseArray.length-1]===':'){
+                    verseArray.push("1");
+                    const newVerse = verseArray.join("");
+                    console.log("chatGPT response ends with :");
+
+                fetch(`https://bible-api.com/${newVerse}`)
                 .then((response)=>{return response.json()})
                 .then((data)=>{console.log(data.text);dispach(changeVerse(data));dispach(changeReference(data))})
-                
-                console.log(data.data.choices[0].text);});
+                }
+                 //chatGPT doesn't contain :
+                else if(!verseArray.includes(':')){
+                    verseArray.push(":","1");
+                    const newVerse = verseArray.join("");
+                    console.log("chatGPT doesn't contain :");
 
+                fetch(`https://bible-api.com/${newVerse}`)
+                .then((response)=>{return response.json()})
+                .then((data)=>{console.log(data.text);dispach(changeVerse(data));dispach(changeReference(data))})
+                }            
+            });
         }
         else{
             //end with -
@@ -86,13 +104,11 @@ function Form() {
     }
     return ( <>
 
-<div className="toggle-input-category">
         <div className="input-categories">
-            <button onClick={activateSelfVerse}>Your own verse reference</button>
-            <button onClick={activateTopicVerse}>Verse based on a topic</button>
-            <button onClick={activateDiscoverVerse}>Discover random verse</button>
+            <button onClick={activateSelfVerse} className={isSelfVerse && "is-active"}>Your own verse reference</button>
+            <button onClick={activateTopicVerse} className={isTopicVerse && "is-active"}>Verse based on a topic</button>
+            <button onClick={activateDiscoverVerse} className={isDiscoverVerse && "is-active"}>Discover random verse</button>
         </div>
-      </div>
 
     {isSelfVerse && <form  className="self-verse">
         <input 
@@ -127,7 +143,10 @@ function Form() {
 
 
     {isTopicVerse && <form className="topic-verse">
-        <input type="text" name="" id="" onChange={(e)=>{setTopic(e.currentTarget.value)}} />
+        <input 
+        type="text"
+        placeholder="Enter your topic here. e.g. lust, baptism, faith"
+        onChange={(e)=>{setTopic(e.currentTarget.value)}} />
         <button type="submit" onClick={generate}> Generate verse</button>
         </form>
     }

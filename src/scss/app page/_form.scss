@@ -1,11 +1,31 @@
-.self-verse{
+.input-categories{
+    margin: 50px auto 40px auto;
+    text-align: center;
+    & button{
+        border: none;
+        padding: 20px;
+        border-radius: 5px;
+        &:hover{
+            cursor: pointer;
+        }
+        &:nth-child(2){
+            margin: 0 10px;
+        }
+    }
+
+}
+form{
     font-size: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 50px auto 40px auto;
+    margin: auto;
     width: 40%;
+    & p{
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
     & input{
         margin-bottom: 15px;
         background-color: $background_color2;
@@ -27,12 +47,10 @@
             cursor: pointer;
         }
     }
-}
-
-.topic-verse{
 
 }
 
-.discover-verse{
-    
+.is-active{
+    background-color: $button_color;
+    color: $background_color;
 }
