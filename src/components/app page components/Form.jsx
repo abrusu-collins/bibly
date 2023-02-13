@@ -38,12 +38,9 @@ function Form() {
         if(isSelfVerse){
             fetch(`https://bible-api.com/${userinputs.book}%20${userinputs.chapter}:${userinputs.verse}`)
             .then((response)=>{return response.json()})
-            .then((data)=>{console.log(data.text);dispach(changeVerse(data));dispach(changeReference(data))})
+            .then((data)=>{dispach(changeVerse(data));dispach(changeReference(data))})
         }
         else if(isTopicVerse){
-            //end with -
-            //end with string
-            //end with : or doesn't contain :
             openai.createCompletion({
                 model: "text-davinci-003",
                 prompt: `give me a bible verse reference that teaches on the topic (${topic}).
@@ -65,9 +62,9 @@ function Form() {
 
                 fetch(`https://bible-api.com/${newVerse}`)
                 .then((response)=>{return response.json()})
-                .then((data)=>{console.log(data.text);dispach(changeVerse(data));dispach(changeReference(data))})
+                .then((data)=>{dispach(changeVerse(data));dispach(changeReference(data))})
                 }
-                 //chatGPT doesn't contain :
+                 //chatGPT response doesn't contain :
                 else if(!verseArray.includes(':')){
                     verseArray.push(":","1");
                     const newVerse = verseArray.join("");
@@ -75,20 +72,18 @@ function Form() {
 
                 fetch(`https://bible-api.com/${newVerse}`)
                 .then((response)=>{return response.json()})
-                .then((data)=>{console.log(data.text);dispach(changeVerse(data));dispach(changeReference(data))})
+                .then((data)=>{dispach(changeVerse(data));dispach(changeReference(data))})
                 }
                  //chatGPT gives a perfect response
                 else{
                     fetch(`https://bible-api.com/${verseResponse}`)
                     .then((response)=>{return response.json()})
-                    .then((data)=>{console.log(data.text);dispach(changeVerse(data));dispach(changeReference(data))})
+                    .then((data)=>{dispach(changeVerse(data));dispach(changeReference(data))})
                 }            
             });
         }
         else{
-            //end with -
-            //end with string
-            //end with :
+            //random verse enerator
             openai.createCompletion({
                 model: "text-davinci-003",
                 prompt: `give me a random bible verse reference.
