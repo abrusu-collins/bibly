@@ -71,11 +71,17 @@ function Form() {
                 else if(!verseArray.includes(':')){
                     verseArray.push(":","1");
                     const newVerse = verseArray.join("");
-                    console.log("chatGPT doesn't contain :");
+                    console.log(verseResponse);
 
                 fetch(`https://bible-api.com/${newVerse}`)
                 .then((response)=>{return response.json()})
                 .then((data)=>{console.log(data.text);dispach(changeVerse(data));dispach(changeReference(data))})
+                }
+                 //chatGPT gives a perfect response
+                else{
+                    fetch(`https://bible-api.com/${verseResponse}`)
+                    .then((response)=>{return response.json()})
+                    .then((data)=>{console.log(data.text);dispach(changeVerse(data));dispach(changeReference(data))})
                 }            
             });
         }
