@@ -63,6 +63,10 @@ function Form() {
                 fetch(`https://bible-api.com/${newVerse}`)
                 .then((response)=>{return response.json()})
                 .then((data)=>{dispach(changeVerse(data));dispach(changeReference(data))})
+                .catch((err)=>{
+                    dispach(changeVerse("An error occurred"));
+                    dispach(changeReference("Try again"));
+                })
                 }
                  //chatGPT response doesn't contain :
                 else if(!verseArray.includes(':')){
@@ -73,12 +77,34 @@ function Form() {
                 fetch(`https://bible-api.com/${newVerse}`)
                 .then((response)=>{return response.json()})
                 .then((data)=>{dispach(changeVerse(data));dispach(changeReference(data))})
+                .catch((err)=>{
+                    dispach(changeVerse("An error occurred"));
+                    dispach(changeReference("Try again"));
+                })
+                }
+                else if(verseArray[verseArray.length-1]==='-'){
+                    let missingNumber = parseInt(verseArray[verseArray.length-2])+1;
+                    verseArray.push(missingNumber);
+                    const newVerse= verseArray.join("");
+                    console.log("verse ends with -");
+
+                    fetch(`https://bible-api.com/${newVerse}`)
+                    .then((response)=>{return response.json()})
+                    .then((data)=>{dispach(changeVerse(data));dispach(changeReference(data))})
+                    .catch((err)=>{
+                        dispach(changeVerse("An error occurred"));
+                        dispach(changeReference("Try again"));
+                    })
                 }
                  //chatGPT gives a perfect response
                 else{
                     fetch(`https://bible-api.com/${verseResponse}`)
                     .then((response)=>{return response.json()})
                     .then((data)=>{dispach(changeVerse(data));dispach(changeReference(data))})
+                    .catch((err)=>{
+                        dispach(changeVerse("An error occurred"));
+                        dispach(changeReference("Try again"));
+                    })
                 }            
             });
         }
