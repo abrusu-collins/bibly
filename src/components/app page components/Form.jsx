@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import {changeVerse,changeReference} from "../../features/verse/verseSlice";
+import { useToast } from '@chakra-ui/react';
 
 import { Configuration, OpenAIApi }  from "openai";
 const configuration = new Configuration({
@@ -14,6 +15,7 @@ function Form() {
     const [isTopicVerse,setIsTopicVerse] = useState(false);
     const [isDiscoverVerse,setIsDiscoverVerse] = useState(false);
     const [topic, setTopic]= useState("");
+    const toast = useToast();
 
 
 
@@ -36,11 +38,31 @@ function Form() {
     const generate = (e)=>{
         e.preventDefault();
         if(isSelfVerse){
+            if(!userinputs.book || !userinputs.chapter || !userinputs.verse){
+                toast({
+                    title: 'Add/Describe your topic',
+                    description: "You can't leave the topic input box empty",
+                    status: 'error',
+                    duration: 2000,
+                    isClosable: true,
+                  })
+                  
+            }else{
             fetch(`https://bible-api.com/${userinputs.book}%20${userinputs.chapter}:${userinputs.verse}`)
             .then((response)=>{return response.json()})
             .then((data)=>{dispach(changeVerse(data));dispach(changeReference(data))})
         }
+        }
         else if(isTopicVerse){
+            if (!topic){
+                toast({
+                    title: 'Add/Describe your topic',
+                    description: "You can't leave the topic input box empty",
+                    status: 'error',
+                    duration: 2000,
+                    isClosable: true,
+                  })
+            }else{
             openai.createCompletion({
                 model: "text-davinci-003",
                 prompt: `give me a bible verse reference that teaches on the topic (${topic}).
@@ -113,6 +135,7 @@ function Form() {
                 }            
             });
         }
+    }
         else{
             //random verse enerator
             openai.createCompletion({
