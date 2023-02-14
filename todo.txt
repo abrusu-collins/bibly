@@ -9,8 +9,8 @@ app page
 add google analytics
 
 more on the fecth loader display and also error handling
-NPprogress and chakra toast
-use chakra toast for empty form values
+NPprogress
+
 
 add confetti after image is downloaded
 https://github.com/Agezao/confetti-js
@@ -31,3 +31,5 @@ html2canvas for downloading image
 1. your own verse
 2. verse based on a topic
 3. discover random verse
+
+use chakra toast for empty form values
