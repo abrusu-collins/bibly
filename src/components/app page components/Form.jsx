@@ -40,8 +40,8 @@ function Form() {
         if(isSelfVerse){
             if(!userinputs.book || !userinputs.chapter || !userinputs.verse){
                 toast({
-                    title: 'Add/Describe your topic',
-                    description: "You can't leave the topic input box empty",
+                    title: 'Fill all inputs',
+                    description: "You can't leave any input box empty",
                     status: 'error',
                     duration: 2000,
                     isClosable: true,
