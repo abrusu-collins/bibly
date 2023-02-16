@@ -52,7 +52,14 @@ function Form() {
                 //   NProgress.done();
             }else{
             fetch(`https://bible-api.com/${userinputs.book}%20${userinputs.chapter}:${userinputs.verse}`)
-            .then((response)=>{return response.json()})
+            .then((response)=>{
+                if (!response.ok){
+                    throw new Error("Promise failed")
+                }
+                else{
+                    return response.json()
+                }
+                })
             .then((data)=>{dispach(changeVerse(data));dispach(changeReference(data))})
             .catch((err)=>{
                 dispach(changeVerse({text:"An error occurred😥"}));
