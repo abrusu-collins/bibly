@@ -2,7 +2,6 @@ import { useState } from "react";
 import { useDispatch } from "react-redux";
 import {changeVerse,changeReference} from "../../features/verse/verseSlice";
 import { useToast } from '@chakra-ui/react';
-import nprogress from "nprogress";
 
 
 import { Configuration, OpenAIApi }  from "openai";
@@ -39,7 +38,8 @@ function Form() {
     }
     const generate = (e)=>{
         e.preventDefault();
-        nprogress.start();
+        dispach(changeVerse({text:"Loading..."}));
+        dispach(changeReference({reference:"Loading..."}));
         if(isSelfVerse){
             if(!userinputs.book || !userinputs.chapter || !userinputs.verse){
                 toast({
@@ -79,6 +79,7 @@ function Form() {
               .then((data)=>{
                 const verseResponse = data.data.choices[0].text;
                 const verseArray = verseResponse.split("");
+                console.log(verseResponse);
                 //chatGPT response ends with :
                 if(verseArray[verseArray.length-1]===':'){
                     verseArray.push("1");
@@ -87,11 +88,30 @@ function Form() {
 
                 fetch(`https://bible-api.com/${newVerse}`)
                 .then((response)=>{return response.json()})
-                .then((data)=>{dispach(changeVerse(data));dispach(changeReference(data))})
+                .then((data)=>{
+                    dispach(changeVerse(data));
+                    dispach(changeReference(data))})
                 .catch((err)=>{
                     dispach(changeVerse("An error occurred"));
                     dispach(changeReference("Try again"));
                 })
+                }
+                //chatGPT response contains .
+                else if (verseArray.includes(".")){
+                     verseArray.splice(".");
+                     verseArray.trim();
+                     const newVerse = verseArray.join("");
+                     console.log(verseResponse);
+ 
+                 fetch(`https://bible-api.com/${newVerse}`)
+                 .then((response)=>{return response.json()})
+                 .then((data)=>{
+                     dispach(changeVerse(data));
+                     dispach(changeReference(data))})
+                 .catch((err)=>{
+                     dispach(changeVerse("An error occurred"));
+                     dispach(changeReference("Try again"));
+                 })
                 }
                  //chatGPT response doesn't contain :
                 else if(!verseArray.includes(':')){
@@ -101,7 +121,9 @@ function Form() {
 
                 fetch(`https://bible-api.com/${newVerse}`)
                 .then((response)=>{return response.json()})
-                .then((data)=>{dispach(changeVerse(data));dispach(changeReference(data))})
+                .then((data)=>{
+                    dispach(changeVerse(data));
+                    dispach(changeReference(data))})
                 .catch((err)=>{
                     dispach(changeVerse("An error occurred"));
                     dispach(changeReference("Try again"));
@@ -116,7 +138,9 @@ function Form() {
 
                     fetch(`https://bible-api.com/${newVerse}`)
                     .then((response)=>{return response.json()})
-                    .then((data)=>{dispach(changeVerse(data));dispach(changeReference(data))})
+                    .then((data)=>{
+                        dispach(changeVerse(data));
+                        dispach(changeReference(data))})
                     .catch((err)=>{
                         dispach(changeVerse("An error occurred"));
                         dispach(changeReference("Try again"));
@@ -127,15 +151,25 @@ function Form() {
                     dispach(changeReference("Try again"));
                 }
                  //chatGPT gives a perfect response
-                else{
+                 //contains :
+                 // doesn't end with : or -
+                else if(verseArray.includes(":") 
+                && verseArray[verseArray.length-1] !==":" 
+                && verseArray[verseArray.length-1] !=="-"){
                     fetch(`https://bible-api.com/${verseResponse}`)
                     .then((response)=>{return response.json()})
-                    .then((data)=>{dispach(changeVerse(data));dispach(changeReference(data))})
+                    .then((data)=>{
+                        dispach(changeVerse(data));
+                        dispach(changeReference(data))})
                     .catch((err)=>{
                         dispach(changeVerse("An error occurred"));
                         dispach(changeReference("Try again"));
                     })
-                }            
+                } 
+                else{
+                    dispach(changeVerse("An error occurred"));
+                    dispach(changeReference("Try again"));
+                }           
             });
         }
     }
@@ -155,7 +189,9 @@ function Form() {
               .then((data)=>{
                 fetch(`https://bible-api.com/${data.data.choices[0].text}`)
                 .then((response)=>{return response.json()})
-                .then((data)=>{console.log(data.text);dispach(changeVerse(data));dispach(changeReference(data))})
+                .then((data)=>{
+                    dispach(changeVerse(data));
+                    dispach(changeReference(data))})
                 
                 console.log(data.data.choices[0].text);});
         }

@@ -8,8 +8,7 @@ app page
 
 add google analytics
 
-more on the fecth loader display and also error handling
-NPprogress
+
 
 
 add confetti after image is downloaded
@@ -33,3 +32,4 @@ html2canvas for downloading image
 3. discover random verse
 
 use chakra toast for empty form values
+more on the fecth loader display and also error handling
