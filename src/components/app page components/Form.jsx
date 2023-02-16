@@ -2,6 +2,8 @@ import { useState } from "react";
 import { useDispatch } from "react-redux";
 import {changeVerse,changeReference} from "../../features/verse/verseSlice";
 import { useToast } from '@chakra-ui/react';
+import nprogress from "nprogress";
+
 
 import { Configuration, OpenAIApi }  from "openai";
 const configuration = new Configuration({
@@ -37,6 +39,7 @@ function Form() {
     }
     const generate = (e)=>{
         e.preventDefault();
+        nprogress.start();
         if(isSelfVerse){
             if(!userinputs.book || !userinputs.chapter || !userinputs.verse){
                 toast({
@@ -46,7 +49,7 @@ function Form() {
                     duration: 2000,
                     isClosable: true,
                   })
-                  
+                //   NProgress.done();
             }else{
             fetch(`https://bible-api.com/${userinputs.book}%20${userinputs.chapter}:${userinputs.verse}`)
             .then((response)=>{return response.json()})
