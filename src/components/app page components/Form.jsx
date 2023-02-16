@@ -54,6 +54,10 @@ function Form() {
             fetch(`https://bible-api.com/${userinputs.book}%20${userinputs.chapter}:${userinputs.verse}`)
             .then((response)=>{return response.json()})
             .then((data)=>{dispach(changeVerse(data));dispach(changeReference(data))})
+            .catch((err)=>{
+                dispach(changeVerse({text:"An error occurred😥"}));
+                dispach(changeReference({reference:"Try again✌️"}));
+            })
         }
         }
         else if(isTopicVerse){
