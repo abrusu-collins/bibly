@@ -18,6 +18,10 @@
       );
       padding: 50px;
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
       & .verse {
         text-align: left;
         margin-bottom: 25px;

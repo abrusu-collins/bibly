@@ -238,6 +238,10 @@ form button:hover {
   background: linear-gradient(45deg, rgb(252, 169, 90), rgb(162, 85, 124), rgb(71, 0, 157));
   padding: 50px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 .dataandediting .data .versediv .verse {
   text-align: left;
