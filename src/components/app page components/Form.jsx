@@ -53,13 +53,16 @@ function Form() {
             fetch(`https://bible-api.com/${userinputs.book}%20${userinputs.chapter}:${userinputs.verse}`)
             .then((response)=>{
                 if (!response.ok){
-                    throw new Error("Promise failed")
+                    throw new Error("Promise failed");
                 }
                 else{
-                    return response.json()
+                    return response.json();
                 }
                 })
-            .then((data)=>{dispach(changeVerse(data));dispach(changeReference(data))})
+            .then((data)=>{
+                dispach(changeVerse(data));
+                dispach(changeReference(data))
+            })
             .catch((err)=>{
                 dispach(changeVerse({text:"An error occurred😥"}));
                 dispach(changeReference({reference:"Try again✌️"}));
@@ -85,7 +88,14 @@ function Form() {
                 temperature: 1,
                 max_tokens: 7,
               })
-              .then((res)=>{return res})
+              .then((response)=>{
+                if (!response.ok){
+                    throw new Error("Promise failed");
+                }
+                else{
+                    return response.json();
+                }
+              })
               .then((data)=>{
                 const verseResponse = data.data.choices[0].text;
                 const verseArray = verseResponse.split("");
@@ -97,13 +107,20 @@ function Form() {
                     console.log("chatGPT response ends with :");
 
                 fetch(`https://bible-api.com/${newVerse}`)
-                .then((response)=>{return response.json()})
+                .then((response)=>{
+                    if (!response.ok){
+                        throw new Error("Promise failed");
+                    }
+                    else{
+                        return response.json();
+                    }
+                })
                 .then((data)=>{
                     dispach(changeVerse(data));
                     dispach(changeReference(data))})
                 .catch((err)=>{
-                    dispach(changeVerse("An error occurred"));
-                    dispach(changeReference("Try again"));
+                    dispach(changeVerse({text:"An error occurred"}));
+                    dispach(changeReference({reference:"Try again"}));
                 })
                 }
                 //chatGPT response contains .
@@ -114,13 +131,20 @@ function Form() {
                      console.log(verseResponse);
  
                  fetch(`https://bible-api.com/${newVerse}`)
-                 .then((response)=>{return response.json()})
+                 .then((response)=>{
+                    if (!response.ok){
+                        throw new Error("Promise failed");
+                    }
+                    else{
+                        return response.json();
+                    }
+                 })
                  .then((data)=>{
                      dispach(changeVerse(data));
                      dispach(changeReference(data))})
                  .catch((err)=>{
-                     dispach(changeVerse("An error occurred"));
-                     dispach(changeReference("Try again"));
+                     dispach(changeVerse({text:"An error occurred"}));
+                     dispach(changeReference({reference:"Try again"}));
                  })
                 }
                  //chatGPT response doesn't contain :
@@ -130,13 +154,20 @@ function Form() {
                     console.log(verseResponse);
 
                 fetch(`https://bible-api.com/${newVerse}`)
-                .then((response)=>{return response.json()})
+                .then((response)=>{
+                    if (!response.ok){
+                        throw new Error("Promise failed");
+                    }
+                    else{
+                        return response.json();
+                    }
+                })
                 .then((data)=>{
                     dispach(changeVerse(data));
                     dispach(changeReference(data))})
                 .catch((err)=>{
-                    dispach(changeVerse("An error occurred"));
-                    dispach(changeReference("Try again"));
+                    dispach(changeVerse({text:"An error occurred"}));
+                    dispach(changeReference({reference:"Try again"}));
                 })
                 }
                  //chatGPT response ends with -
@@ -147,18 +178,25 @@ function Form() {
                     console.log("verse ends with -");
 
                     fetch(`https://bible-api.com/${newVerse}`)
-                    .then((response)=>{return response.json()})
+                    .then((response)=>{
+                        if (!response.ok){
+                            throw new Error("Promise failed");
+                        }
+                        else{
+                            return response.json();
+                        }
+                    })
                     .then((data)=>{
                         dispach(changeVerse(data));
                         dispach(changeReference(data))})
                     .catch((err)=>{
-                        dispach(changeVerse("An error occurred"));
-                        dispach(changeReference("Try again"));
+                        dispach(changeVerse({text:"An error occurred"}));
+                        dispach(changeReference({reference:"Try again"}));
                     })
                 }
                 else if(verseArray.includes(".")){
-                    dispach(changeVerse("An error occurred"));
-                    dispach(changeReference("Try again"));
+                    dispach(changeVerse({text:"An error occurred"}));
+                    dispach(changeReference({reference:"Try again"}));
                 }
                  //chatGPT gives a perfect response
                  //contains :
@@ -167,18 +205,25 @@ function Form() {
                 && verseArray[verseArray.length-1] !==":" 
                 && verseArray[verseArray.length-1] !=="-"){
                     fetch(`https://bible-api.com/${verseResponse}`)
-                    .then((response)=>{return response.json()})
+                    .then((response)=>{
+                        if (!response.ok){
+                            throw new Error("Promise failed");
+                        }
+                        else{
+                            return response.json();
+                        }
+                    })
                     .then((data)=>{
                         dispach(changeVerse(data));
                         dispach(changeReference(data))})
                     .catch((err)=>{
-                        dispach(changeVerse("An error occurred"));
-                        dispach(changeReference("Try again"));
+                        dispach(changeVerse({text:"An error occurred"}));
+                        dispach(changeReference({reference:"Try again"}));
                     })
                 } 
                 else{
-                    dispach(changeVerse("An error occurred"));
-                    dispach(changeReference("Try again"));
+                    dispach(changeVerse({text:"An error occurred"}));
+                    dispach(changeReference({reference:"Try again"}));
                 }           
             });
         }
@@ -198,12 +243,25 @@ function Form() {
               .then((res)=>{return res})
               .then((data)=>{
                 fetch(`https://bible-api.com/${data.data.choices[0].text}`)
-                .then((response)=>{return response.json()})
+                .then((response)=>{
+                    if (!response.ok){
+                        throw new Error("Promise failed");
+                    }
+                    else{
+                        return response.json();
+                    }
+                })
                 .then((data)=>{
                     dispach(changeVerse(data));
                     dispach(changeReference(data))})
-                
-                console.log(data.data.choices[0].text);});
+                .catch((err)=>{
+                    console.log(err);
+                    dispach(changeVerse({text:"An error occurred"}));
+                    dispach(changeReference({reference:"Try again"}));
+
+                })                
+                console.log(data.data.choices[0].text);
+            });
         }
     }
     return ( <>
