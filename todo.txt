@@ -6,6 +6,7 @@ make responsive
 
 LATER
 add sharing later
+use only one fetch call for the verses based on topic
 
 add confetti after image is downloaded
 https://github.com/Agezao/confetti-js

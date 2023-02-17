@@ -225,6 +225,11 @@ function Form() {
                     dispach(changeVerse({text:"An error occurred"}));
                     dispach(changeReference({reference:"Try again"}));
                 }           
+            })
+            .catch((err)=>{
+                console.log(err);
+                dispach(changeVerse({text:"An error occurred"}));
+                dispach(changeReference({reference:"Try again"}));
             });
         }
     }
