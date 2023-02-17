@@ -1,35 +1,17 @@
 
-navbar
-faqs
-
-
-app page
-
-
 add google analytics
+make responsive
 
 
 
+LATER
+add sharing later
 
 add confetti after image is downloaded
 https://github.com/Agezao/confetti-js
 
+ verse of the day (on app and socials)
+ 
+navbar
+faqs
 
-add sharing later
-
-DONE
-
-the website
-https://bible-api.com/
-
-html2canvas for downloading image 
-2 halves(left  input element for verse: canvas: download and share button,
- right: editing tools(background cats, fonts, borders,text color in hex, ))
-
- 3 ways to get your verse
-1. your own verse
-2. verse based on a topic
-3. discover random verse
-
-use chakra toast for empty form values
-more on the fecth loader display and also error handling
