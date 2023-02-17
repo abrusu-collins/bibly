@@ -38,8 +38,6 @@ function Form() {
     }
     const generate = (e)=>{
         e.preventDefault();
-        dispach(changeVerse({text:"Loading..."}));
-        dispach(changeReference({reference:"Loading..."}));
         if(isSelfVerse){
             if(!userinputs.book || !userinputs.chapter || !userinputs.verse){
                 toast({
@@ -49,8 +47,9 @@ function Form() {
                     duration: 2000,
                     isClosable: true,
                   })
-                //   NProgress.done();
             }else{
+                dispach(changeVerse({text:"Loading..."}));
+                dispach(changeReference({reference:"Loading..."}));
             fetch(`https://bible-api.com/${userinputs.book}%20${userinputs.chapter}:${userinputs.verse}`)
             .then((response)=>{
                 if (!response.ok){
