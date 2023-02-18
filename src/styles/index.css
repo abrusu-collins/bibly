@@ -464,3 +464,30 @@ form button:hover {
     width: 100%;
   }
 }
+@media screen and (max-width: 527px) {
+  .marquee .header {
+    width: 80%;
+    margin: 0 auto 50px auto;
+  }
+  .steps .header {
+    width: 80%;
+    margin: 0 auto 50px auto;
+  }
+  .share .header {
+    width: 80%;
+    margin: 0 auto 50px auto;
+  }
+}
+@media screen and (max-width: 501px) {
+  .marquee .top {
+    width: 80%;
+  }
+  .steps .steps-div {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 401px) {
+  .hero {
+    width: 90%;
+  }
+}
