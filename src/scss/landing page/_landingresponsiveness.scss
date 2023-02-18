@@ -29,3 +29,44 @@
     }
   }
 }
+
+@media screen and (max-width: 911px) {
+    .hero {
+      width: 70%;
+      grid-template-columns: 1fr;
+      text-align: center;
+      margin: 100px auto 100px auto;
+
+
+    }
+  }
+  @media screen and (max-width: 851px) {
+    .marquee{
+        & .header{
+            font-size: 30px;
+        }
+        & .top{
+            grid-template-columns: 1fr;
+            width: 50%;
+        }
+    }
+    .steps{
+        & .header{
+            font-size: 30px;
+        }
+        & .steps-div{
+            grid-template-columns: 1fr;
+            width: 70%;
+            & .step1{
+                & .step-header{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    .share{
+        & .header{
+            font-size: 30px;
+        }
+    }
+  }
