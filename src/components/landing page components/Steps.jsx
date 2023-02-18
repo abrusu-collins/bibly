@@ -10,7 +10,7 @@ function Steps() {
       <div className="steps-div">
         <div className="step1">
         <p className="number">1</p>
-            <p className="step-header">Click on the "Start Generator" button</p>
+            <p className="step-header">Click "Start Generator" button</p>
           <p className="step-description">
           Are you ready to create something amazing? 
           Click the "start generator" button at the top to kick off the process
