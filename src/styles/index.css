@@ -450,6 +450,9 @@ form button:hover {
   .hero {
     width: 80%;
   }
+  .hero img {
+    display: none;
+  }
   .marquee .top {
     width: 70%;
   }
