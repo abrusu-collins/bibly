@@ -85,6 +85,8 @@ function Form() {
                 console.log(topic.split(" ").length);
             }
             else{
+                dispach(changeVerse({text:"Loading..."}));
+                dispach(changeReference({reference:"Loading..."}));
             openai.createCompletion({
                 model: "text-davinci-003",
                 prompt: `give me a bible verse reference that teaches on the topic (${topic}).
@@ -236,6 +238,8 @@ function Form() {
     }
         else{
             //random verse enerator
+            dispach(changeVerse({text:"Loading..."}));
+            dispach(changeReference({reference:"Loading..."}));
             openai.createCompletion({
                 model: "text-davinci-003",
                 prompt: `give me a random bible verse reference.
