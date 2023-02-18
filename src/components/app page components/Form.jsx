@@ -175,8 +175,9 @@ function Form() {
                 }
                  //chatGPT response ends with -
                 else if(verseArray[verseArray.length-1]==='-'){
-                    let missingNumber = parseInt(verseArray[verseArray.length-2])+1;
-                    verseArray.push(missingNumber);
+                    // let missingNumber = parseInt(verseArray[verseArray.length-2])+1;
+                    // verseArray.push(missingNumber);
+                    verseArray.pop();
                     const newVerse= verseArray.join("");
                     console.log("verse ends with -");
 
