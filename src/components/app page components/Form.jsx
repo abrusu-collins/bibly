@@ -45,7 +45,7 @@ function Form() {
                     title: 'Fill all inputs',
                     description: "You can't leave any input box empty",
                     status: 'error',
-                    duration: 2000,
+                    duration: 3000,
                     isClosable: true,
                   })
             }else{
@@ -76,7 +76,7 @@ function Form() {
                     title: 'Add/Describe your topic',
                     description: "You can't leave the topic input box empty",
                     status: 'error',
-                    duration: 2000,
+                    duration: 3000,
                     isClosable: true,
                   })
             }
