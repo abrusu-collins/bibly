@@ -7,7 +7,7 @@ import ReactGA from 'react-ga';
 function MainApp() {
   useEffect(()=>{
     ReactGA.pageview(window.location.pathname);
-  })
+  },[])
   return (
     <>
       <Form />
