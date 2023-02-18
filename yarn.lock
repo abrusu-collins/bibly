@@ -4072,6 +4072,11 @@
   "resolved" "https://registry.npmjs.org/char-regex/-/char-regex-2.0.1.tgz"
   "version" "2.0.1"
 
+"check-if-word@^1.2.1":
+  "integrity" "sha512-FrB/d+r+ITgMjxGfIS1tE7OlfI2bNSARSCNyC6el23ESDP1ugP1MJPts0ecYawiO6xPE2msJhAYtqBgAMD8oPw=="
+  "resolved" "https://registry.npmjs.org/check-if-word/-/check-if-word-1.2.1.tgz"
+  "version" "1.2.1"
+
 "check-types@^11.1.1":
   "integrity" "sha512-HBiYvXvn9Z70Z88XKjz3AEKd4HJhBXsa3j7xFnITAzoS8+q6eIGi8qDB8FKPBAjtuxjI/zFpwuiCb8oDtKOYrA=="
   "resolved" "https://registry.npmjs.org/check-types/-/check-types-11.2.2.tgz"

@@ -2,6 +2,8 @@ import { useState } from "react";
 import { useDispatch } from "react-redux";
 import {changeVerse,changeReference} from "../../features/verse/verseSlice";
 import { useToast } from '@chakra-ui/react';
+import checkWord from "check-if-word";
+
 
 
 import { Configuration, OpenAIApi }  from "openai";
@@ -17,8 +19,7 @@ function Form() {
     const [isDiscoverVerse,setIsDiscoverVerse] = useState(false);
     const [topic, setTopic]= useState("");
     const toast = useToast();
-
-
+    const words     = checkWord('en');
 
     const dispach = useDispatch();
     const activateSelfVerse = (e)=>{
@@ -78,7 +79,12 @@ function Form() {
                     duration: 2000,
                     isClosable: true,
                   })
-            }else{
+            }
+            else if(topic.split(" ").length===1 && !words.check(topic)){
+                console.log("not an english word");
+                console.log(topic.split(" ").length);
+            }
+            else{
             openai.createCompletion({
                 model: "text-davinci-003",
                 prompt: `give me a bible verse reference that teaches on the topic (${topic}).
