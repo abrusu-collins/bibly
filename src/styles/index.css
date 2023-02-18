@@ -467,7 +467,7 @@ form button:hover {
 @media screen and (max-width: 527px) {
   .marquee .header {
     width: 80%;
-    margin: 0 auto 50px auto;
+    margin: 0 auto 10px auto;
   }
   .steps .header {
     width: 80%;
