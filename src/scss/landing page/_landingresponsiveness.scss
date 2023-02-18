@@ -1,0 +1,31 @@
+@media screen and (max-width: 1141px) {
+  .hero {
+    width: 90%;
+  }
+  .marquee {
+    & .top {
+      width: 80%;
+    }
+  }
+  .steps {
+    & .steps-div {
+      width: 85%;
+    }
+  }
+}
+@media screen and (max-width: 941px) {
+  .marquee {
+    & .top {
+      width: 90%;
+    }
+  }
+  .steps {
+    & .steps-div {
+      width: 95%;
+    }
+    & .img1,
+    .img2 {
+      display: none;
+    }
+  }
+}

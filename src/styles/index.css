@@ -129,7 +129,7 @@ span {
 }
 .steps .steps-div .step1 .number {
   font-size: 30px;
-  border: 5px solid #ffffff;
+  border: 7px solid #ffffff;
   background-color: #edf3f2;
   height: 50px;
   width: 50px;
@@ -379,4 +379,28 @@ form button:hover {
 }
 .dataandediting .editing .backgrounds div:hover {
   cursor: pointer;
+}
+
+@media screen and (max-width: 1141px) {
+  .hero {
+    width: 90%;
+  }
+  .marquee .top {
+    width: 80%;
+  }
+  .steps .steps-div {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 941px) {
+  .marquee .top {
+    width: 90%;
+  }
+  .steps .steps-div {
+    width: 95%;
+  }
+  .steps .img1,
+  .steps .img2 {
+    display: none;
+  }
 }
