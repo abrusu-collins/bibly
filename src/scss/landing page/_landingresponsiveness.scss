@@ -70,3 +70,20 @@
         }
     }
   }
+
+  @media screen and (max-width: 701px) {
+    .marquee{
+        & .header{
+            font-size: 30px;
+        }
+        & .top{
+            grid-template-columns: 1fr;
+            width: 60%;
+        }
+    }
+    .share{
+        & img {
+            width: 70%;
+          }
+    }
+}
