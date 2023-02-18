@@ -118,7 +118,7 @@ span {
 }
 .steps .steps-div .step1 {
   background-color: #edf3f2;
-  padding: 90px 45px;
+  padding: 50px;
   border-radius: 15px;
 }
 .steps .steps-div .step1 .step-header {
@@ -128,15 +128,17 @@ span {
   font-family: "Aclonica", sans-serif;
 }
 .steps .steps-div .step1 .number {
-  position: absolute;
-  text-align: center;
-  font-size: 150px;
-  color: #e1e4e7;
-  z-index: 0;
-}
-.steps .steps-div .step1 .step-description {
-  position: relative;
-  z-index: 1;
+  font-size: 30px;
+  border: 5px solid #ffffff;
+  background-color: #edf3f2;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -70px;
+  margin-bottom: 50px;
 }
 
 .share {
