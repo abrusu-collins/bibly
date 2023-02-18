@@ -12,10 +12,9 @@ function Steps() {
             <p className="step-header">Click on the "Start Generator" button</p>
           <p className="number">1</p>
           <p className="step-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-            sapiente nulla adipisci non repudiandae, animi aliquam quae
-            cupiditate, cumque iusto ratione corporis delectus aut eos pariatur?
-            Aperiam magnam voluptas dolor.
+          Are you ready to create something amazing? 
+          Click the "start generator" button at the top to kick off the process
+           and see what our tool can do for you.
           </p>
         </div>
 
@@ -23,10 +22,9 @@ function Steps() {
         <p className="step-header">Choose your bible verse</p>
           <p className="number">2</p>
           <p className="step-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-            sapiente nulla adipisci non repudiandae, animi aliquam quae
-            cupiditate, cumque iusto ratione corporis delectus aut eos pariatur?
-            Aperiam magnam voluptas dolor.
+            You'll be taken to the app page. On the app page, you can 
+            generate your verse by using a reference, topic or you 
+            can discover random verses.
           </p>
         </div>
 
@@ -34,10 +32,9 @@ function Steps() {
         <p className="step-header">Customize your image</p>
           <p className="number">3</p>
           <p className="step-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-            sapiente nulla adipisci non repudiandae, animi aliquam quae
-            cupiditate, cumque iusto ratione corporis delectus aut eos pariatur?
-            Aperiam magnam voluptas dolor.
+             After generating your verse, you have options to edit the appearance 
+             of the verse to make it more pleasing and enticing.
+             You can change background, fonts, border radius and a whole lot.
           </p>
         </div>
 
@@ -45,10 +42,8 @@ function Steps() {
         <p className="step-header">Save or Share</p>
           <p className="number">4</p>
           <p className="step-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-            sapiente nulla adipisci non repudiandae, animi aliquam quae
-            cupiditate, cumque iusto ratione corporis delectus aut eos pariatur?
-            Aperiam magnam voluptas dolor.
+        After generating and editing, you can now download the image and share on your 
+        preferred social media site or do whatever you want to do with it.
           </p>
         </div>
       </div>
