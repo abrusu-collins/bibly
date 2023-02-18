@@ -87,3 +87,32 @@
           }
     }
 }
+
+@media screen and (max-width: 601px) {
+    .hero {
+      width: 80%;
+    }
+    .marquee{
+        & .top{
+            width: 70%;
+        }
+    }
+    .steps{
+        & .steps-div{
+            width: 80%;
+        }
+    }
+    .share{
+        & .socials{
+            grid-gap: 1rem;
+            width: 50%;
+        }
+        & img {
+            width: 100%;
+          }
+    }
+  }
+
+  @media screen and (max-width: 501px) {
+
+  }
