@@ -494,3 +494,42 @@ form button:hover {
     width: 90%;
   }
 }
+@media screen and (max-width: 1001px) {
+  form {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 669px) {
+  form {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 578px) {
+  .input-categories {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
+  .input-categories button:nth-child(2) {
+    margin: 0;
+  }
+  .input-categories button:last-child {
+    justify-self: center;
+    grid-column-start: span 2;
+    margin-top: 0.2rem;
+  }
+}
+@media screen and (max-width: 502px) {
+  .input-categories {
+    width: 90%;
+  }
+  form {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 443px) {
+  .input-categories {
+    width: 95%;
+  }
+}
