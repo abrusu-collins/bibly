@@ -1,43 +1,110 @@
-@media screen and (max-width:1001px) {
-    form{
-        width: 70%;
-    }
-    
+//form responsiveness
+@media screen and (max-width: 1001px) {
+  form {
+    width: 70%;
+  }
 }
-@media screen and (max-width:669px) {
-    form{
-        width: 80%;
-    }
+@media screen and (max-width: 669px) {
+  form {
+    width: 80%;
+  }
 }
-@media screen and (max-width:578px) {
-    .input-categories{
-        width: 80%;
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-gap: 1rem;
-        & button{
-            &:nth-child(2){
-                margin: 0;
-            }
-            &:last-child{
-            justify-self: center;
-            grid-column-start: span 2;
-            margin-top: 0.2rem;
-        }
+@media screen and (max-width: 578px) {
+  .input-categories {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    & button {
+      &:nth-child(2) {
+        margin: 0;
+      }
+      &:last-child {
+        justify-self: center;
+        grid-column-start: span 2;
+        margin-top: 0.2rem;
+      }
     }
-    }
+  }
 }
-@media screen and (max-width:502px) {
-    .input-categories{
-        width: 90%;
-    }
-    form{
-        width: 90%;
-    }
+@media screen and (max-width: 502px) {
+  .input-categories {
+    width: 90%;
+  }
+  form {
+    width: 90%;
+  }
 }
 
-@media screen and (max-width:443px) {
-    .input-categories{
-        width: 95%;
+@media screen and (max-width: 443px) {
+  .input-categories {
+    width: 95%;
+  }
+}
+
+//data and editing responsiveness
+@media screen and (max-width: 1146px) {
+  .dataandediting {
+    grid-template-columns: 1fr;
+    width: 60%;
+    & .data {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
+    & .editing {
+      height: 220px;
+    }
+  }
+}
+
+@media screen and (max-width: 801px) {
+  .dataandediting {
+    grid-template-columns: 1fr;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 601px) {
+  .dataandediting {
+    grid-template-columns: 1fr;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 551px) {
+  .dataandediting {
+    & .data {
+      & .versediv {
+        width: 99%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 448px) {
+  .dataandediting {
+    & .data {
+      width: 99%;
+      & .versediv {
+        width: 100%;
+      }
+    }
+    & .editing {
+      & .backgrounds {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 431px) {
+    .dataandediting {
+        & .data {
+          & .versediv {
+            width: 110%;
+            height: 240px;
+            padding:0 30px;
+          }
+        }
+      }
 }
