@@ -43,8 +43,7 @@ span {
 .hero .hero-text .hero-header {
   font-size: 50px;
   font-weight: 900;
-  -webkit-text-decoration: underline wavy #f075c6;
-          text-decoration: underline wavy #f075c6;
+  text-decoration: underline wavy #f075c6;
   font-family: "Aclonica", sans-serif;
 }
 .hero .hero-text .hero-description {
@@ -172,6 +171,7 @@ footer {
 .input-categories {
   margin: 50px auto 40px auto;
   text-align: center;
+  display: none;
 }
 .input-categories button {
   border: none;
@@ -193,6 +193,7 @@ form {
   justify-content: center;
   margin: auto;
   width: 40%;
+  margin-top: 50px;
 }
 form p {
   font-size: 16px;
