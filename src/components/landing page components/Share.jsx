@@ -5,7 +5,7 @@ import snapchat from "../../imgs/snapchat.png";
 
 function Share() {
   return (
-    <div className="share">
+    <div className="share ">
       <p className="header">Instantly share to social media</p>
       <div className="socials">
         <img src={facebook} alt="facebook" />

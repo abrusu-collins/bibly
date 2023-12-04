@@ -2,7 +2,7 @@ import star from "../../imgs/star.png";
 
 function Steps() {
   return (
-    <div className="steps">
+    <div className="steps container">
       <p className="header">Steps to generate your Image</p>
       <div className="img1">
         <img src={star} alt="" />

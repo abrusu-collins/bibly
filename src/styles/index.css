@@ -32,6 +32,10 @@ span {
   border: none;
 }
 
+.container {
+  max-width: 1366px;
+}
+
 .hero {
   display: grid;
   grid-template-columns: 1fr 1.7fr;
@@ -97,6 +101,7 @@ span {
 
 .steps {
   padding: 100px 0;
+  margin: auto;
 }
 .steps .img1 {
   text-align: right;

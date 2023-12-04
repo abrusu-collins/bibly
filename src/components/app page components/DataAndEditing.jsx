@@ -37,7 +37,7 @@ function DataAndEditing() {
 
 
   return (
-    <div className="dataandediting">
+    <div className="dataandediting container">
       <div className="data">
         <div className="versediv" id="domEl" ref={domEl} style={{ borderRadius:`${borderRadius}px`,fontFamily:fontFamily, background:background}}>
           <p className="verse"  style={{ color:`${textColor}`,fontStyle: isItalic? "italic":"normal" }}>{verse}</p>
@@ -48,7 +48,7 @@ function DataAndEditing() {
         </div>
       </div>
 
-      <div className="editing">
+      <div className="editing ">
         <p className="edit-header">Editing Options here(Scroll Down)👇</p>
         <p className="backgrounds-title">Select Backgrounds</p>
 

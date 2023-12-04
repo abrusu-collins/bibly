@@ -2,7 +2,7 @@ import heroImg from "../../imgs/hero-img.jpg";
 
 function Hero() {
   return (
-    <div className="hero">
+    <div className="hero container">
       <div className="hero-text">
         <p className="hero-header">Bibly</p>
         <p className="hero-description">
