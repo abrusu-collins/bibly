@@ -278,9 +278,9 @@ function Form() {
     return ( <>
 
         <div className="input-categories ">
-            <button onClick={activateSelfVerse} className={isSelfVerse && "is-active"}>Your own verse reference</button>
-            <button onClick={activateTopicVerse} className={isTopicVerse && "is-active"}>Verse based on a topic</button>
-            <button onClick={activateDiscoverVerse} className={isDiscoverVerse && "is-active"}>Discover random verse</button>
+            {/* <button onClick={activateSelfVerse} className={isSelfVerse && "is-active"}>Your own verse reference</button> */}
+            {/* <button onClick={activateTopicVerse} className={isTopicVerse && "is-active"}>Verse based on a topic</button> */}
+            {/* <button onClick={activateDiscoverVerse} className={isDiscoverVerse && "is-active"}>Discover random verse</button> */}
         </div>
 
     {isSelfVerse && <form  className="self-verse ">
